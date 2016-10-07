@@ -252,6 +252,7 @@ ul li {
     color: #f7f7f7;
 }
 .oil-title{
+    font-size: 35px;
     color: #484848;
     text-align: center;
 }
@@ -366,6 +367,12 @@ a:hover{
  .footer-links{
     padding-left: 0;
 }
+.last-footer-link a{
+    color: #ffffff;
+}
+.last-footer-link a:hover{
+    color: #feee41;
+}
 
  /*upper header*/
 .mkdf-top-bar {
@@ -442,11 +449,15 @@ a:hover{
     display: table;
     height: 100%;
     vertical-align: middle;
-    padding: 0 16px;
+    padding: 10px 20px;
     -webkit-transition: background-color .15s ease-out;
     -moz-transition: background-color .15s ease-out;
     transition: background-color .15s ease-out;
 }
+.mkdf-top-bar .widget_mkd_social_icon_widget a:hover{
+    color: #feee41;
+}
+
 .mkdf-top-bar .mkdf-social-icon-widget-holder, footer .mkdf-social-icon-widget-holder {
     color: #fff;
 }
@@ -551,8 +562,8 @@ a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, ci
 .widget_mkdf_call_to_action_button .mkdf-call-to-action-button {
     display: block;
     height: 100%;
-    background-color: #43cb83;
-    color: #fff;
+    background-color: #feee41;
+    color: #484848;
     padding: 0 23px 0 18px;
     font-size: 12px;
     -webkit-box-sizing: border-box;
@@ -798,8 +809,6 @@ a, p a {
 .m-b-25{
     margin-bottom: 25px!important;
 }
-
-
 .m-b-40{
     margin-bottom: 40px!important;
 }
@@ -882,6 +891,12 @@ a, p a {
 .p-l-50{
     padding-top: 10px !important;
     padding-left: 50px !important;
+}
+.p-tb-40{
+    padding: 40px 0;
+}
+.m-t-46{
+    margin-top: 46px !important;
 }
 
 
