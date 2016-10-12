@@ -181,6 +181,22 @@ li .footer-link a{
     width: 70px;
     position: absolute;
 }
+
+.title-color {
+    color: #484848;
+    font-weight: 500;
+    margin: 40px;
+    text-align: center;
+    font-size: 35px;
+}
+.title-color::before {
+    content: "";
+    border-bottom: 4px solid #fff;
+    margin-top: 40px;
+    width: 70px;
+    position: absolute;
+}
+
 .oil-btn  {
     background: #fafafa;
     color:#484848 ;
