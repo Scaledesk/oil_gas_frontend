@@ -212,7 +212,7 @@ li .footer-link a{
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
-    /*border: 3px solid #feee41;*/
+    border: 2px solid #565a5c;
     -webkit-transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
     -moz-transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
     transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
@@ -225,7 +225,7 @@ li .footer-link a{
     text-decoration: none;
     background: #feee41;
     color: #565a5c;
-    /*border: 3px solid #feee41;*/
+    border: 2px solid #565a5c;
 
 }
 .oil-btn1{
@@ -287,6 +287,8 @@ li .footer-link a{
     border: 1px solid transparent;
     border-radius: 0 !important;
     cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
 
 }
 ul li {
@@ -820,6 +822,14 @@ a, p a {
     background-color: #feee41;
 }
 
+.footer-links li a{
+    opacity: .6;
+}
+
+.footer-links li a:hover{
+    opacity: 1;
+}
+
 
 /*//////////////////////////////////////////////////////////////////////////
 
@@ -989,6 +999,11 @@ a, p a {
 .f-12{
     font-size: 12px!important;
 }
+
+.f-13{
+    font-size: 13px!important;
+}
+
 
 
 .f-16{
