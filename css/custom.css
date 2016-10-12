@@ -212,7 +212,7 @@ li .footer-link a{
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
-    border: 3px solid #feee41;
+    /*border: 3px solid #feee41;*/
     -webkit-transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
     -moz-transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
     transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
@@ -225,7 +225,7 @@ li .footer-link a{
     text-decoration: none;
     background: #feee41;
     color: #565a5c;
-    border: 3px solid #feee41;
+    /*border: 3px solid #feee41;*/
 
 }
 .oil-btn1{
@@ -388,7 +388,7 @@ a:hover{
 .sub-title{
     color: #484848;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
 }
 .sub-title-center{
     color: #484848;
@@ -717,6 +717,11 @@ a, p a {
 .oil-btn-border{
     border: 3px solid #484848;
 }
+
+.oil-btn-border1{
+    border: 3px solid #f1e400;
+}
+
 /*testimonials*/
 .vc_column_container {
     padding-left: 0;
@@ -812,7 +817,7 @@ a, p a {
 
 
 .cta-strip{
-    background-color: #d4d4d4;
+    background-color: #feee41;
 }
 
 
