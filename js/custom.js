@@ -114,6 +114,19 @@ jQuery(document).ready(function($){
 //        window.location.hash = hash;
             });
         } // End if
+
+
+
+
+
+    });
+
+
+    $("input[type ='text']").click(function(){
+        var $this = $(this);
+        $this.attr("placeholder", "");
+        $this.parent().find(".float-label").addClass("label-top");
+
     });
 
 

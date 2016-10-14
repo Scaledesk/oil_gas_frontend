@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <script src="https://use.fontawesome.com/418c680b48.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <style>
-        html, body {
-            height: 100%;
-            font-family: 'Open Sans', sans-serif;
-        }
-    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/custom.js"></script>
+    <!--<style>-->
+        <!--html, body {-->
+            <!--height: 100%;-->
+            <!--font-family: 'Open Sans', sans-serif;-->
+        <!--}-->
+    <!--</style>-->
 
 
 </head>
@@ -53,8 +54,8 @@
                 </div>
                 <div class="f-input-group">
                     <label class="float-label" for="mobile">How did you hear about us?</label>
-                    <select class="form-control">
-                        <option>Select your option</option>
+                    <select class="form-control oil-form-control">
+                        <option>How did you hear about us ?</option>
                         <option>Newspaper</option>
                         <option>Internet</option>
                         <option>Social Network</option>
@@ -73,7 +74,7 @@
 
                     <div class="col-md-12">
                         <p class="m-10">
-                            <a href="login.html" class="m-10 text-color">Already Registered ? Login Here</a>
+                            <a href="login.html" class="m-10 text-color">Already Registered ? <span class="signup">Login Here</span></a>
                         </p>
                     </div>
                 </div>
@@ -98,18 +99,20 @@
 </section>
 
 <script>
-    //Floating labels//
-    $(document).ready(function () {
-        $("input[type ='text']").click(function () {
-            var $this = $(this);
-            $this.attr("placeholder", "");
-            $this.parent().find(".float-label").addClass("label-top");
-
-        });
-    });
-
-    //Ends here//
+//    //Floating labels//
+//    $(document).ready(function () {
+//        $("input[type ='text']").click(function () {
+//            var $this = $(this);
+//            $this.attr("placeholder", "");
+//            $this.parent().find(".float-label").addClass("label-top");
+//
+//        })
+//    });
+//
+//    //Ends here//
 </script>
+
+
 
 </body>
 </html>
