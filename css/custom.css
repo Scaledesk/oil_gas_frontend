@@ -10,6 +10,13 @@
     font-weight: 600;
 }
 
+
+@font-face {
+    font-family: myHeading;
+    src: url(/fonts/GARABD.TTF)!important;
+
+}
+
 html{
     overflow-x: hidden;
 }
@@ -21,7 +28,7 @@ body{
 
 
 .banner-image{
-    background: url("../css/images/banner1.jpg") center no-repeat ;
+    background: url("../img/BANNER.jpg") center no-repeat ;
     width: 100%;
     background-size: cover;
     height: 565px;
@@ -34,7 +41,7 @@ body{
 }
 
 .banner-image::before{
-    content: '';
+   /* content: '';*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -62,6 +69,59 @@ body{
     margin: auto;
     padding: 5px 20px;
 }
+
+
+.banner-image2{
+    background: url("../img/gray1.png") center no-repeat ;
+    width: 100%;
+    background-size: cover;
+    height: 565px;
+    display: table;
+    position: relative;
+}
+
+.banner-image2::before {
+    background: rgba(17, 17, 17, 0.38);
+}
+
+.banner-image2::before{
+   /* content: '';*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+.banner-image3{
+    background: url("../img/EIGHT.jpg") center no-repeat ;
+    width: 100%;
+    background-size: cover;
+    height: 565px;
+    display: table;
+    position: relative;
+}
+
+.banner-image3::before {
+    background: rgba(17, 17, 17, 0.38);
+}
+
+.banner-image3::before{
+    /* content: '';*/
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+
 
 .navbar {
     min-height: 66px !important;
@@ -102,10 +162,7 @@ body{
     overflow-x: hidden!important;
     -webkit-font-smoothing: antialiased;
 }
-.light-bg{
-    background: #ECECEC;
-;
-}
+
 .oil-font1{
     font-size: 16px !important;
 }
@@ -152,9 +209,9 @@ li .footer-link a{
 /*}*/
 .oil-para{
     font-family:'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 26px;
-    color: #565a5c;
+    color:#0B1632;
     font-weight: 400;
     overflow-x: hidden!important;
     -webkit-font-smoothing: antialiased;
@@ -167,43 +224,52 @@ li .footer-link a{
     overflow-x: hidden!important;
     -webkit-font-smoothing: antialiased;
 }
-.title {
-    color: #484848;
-    font-weight: 500;
-    margin: 40px;
-    text-align: center;
-    font-size: 35px;
+
+.heading-style{
+    Font-size: 35px;
 }
+.large-title{ color: #0F1339;
+    font-weight: 500;
+    font-family: 'EB Garamond', serif;
+
+    font-size: 65px;}
+
+.title {
+    color: #0B1632;
+    font-weight: 400;
+    font-family: 'EB Garamond', serif;
+    font-size: 45px;
+}/*
 .title::before {
     content: "";
     border-bottom: 4px solid #feee41;
     margin-top: 40px;
     width: 70px;
     position: absolute;
-}
+}*/
 
-.title-color {
+/*.title-color {
     color: #484848;
     font-weight: 500;
     margin: 40px;
     text-align: center;
-    font-size: 35px;
+    font-size: 35px;*/
 }
-.title-color::before {
+/*.title-color::before {
     content: "";
     border-bottom: 4px solid #fff;
     margin-top: 40px;
     width: 70px;
     position: absolute;
-}
+}*/
 
 .oil-btn  {
-    background: #fafafa;
-    color:#484848 ;
+    background: #091233;
+    color:#ffffff ;
     display: inline-block;
     position: relative;
     outline: 0;
-    padding: 13px 40px;
+    padding: 10px 30px;
     font-style: normal;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
@@ -212,7 +278,7 @@ li .footer-link a{
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
-    border: 2px solid #565a5c;
+    border: 2px solid #ffffff;
     -webkit-transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
     -moz-transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
     transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
@@ -745,18 +811,22 @@ a, p a {
     min-width: 145px;
 }
 
-
+.sec-position{
+    position:relative;
+}
 
 /*end of yellow section*/
 .yellow-bg{
-    background: #feee41;
+    background: #EF7D03;
 }
 .oil-btn-border{
     border: 3px solid #484848;
 }
 
-.oil-btn-border1{
-    border: 3px solid #f1e400;
+.img-position{
+    position: absolute;
+    top: -61px;
+    right: -28px;
 }
 
 /*testimonials*/
@@ -1077,6 +1147,17 @@ a, p a {
 .m-30{
     margin: 30px!important;
 }
+/*line-height*/
+.line-heigh-6{
+    line-height: 6;
+
+}
+/*fonts*/
+
+.f-10{
+    font-size: 10px;
+}
+
 
 .m-t-0{
     margin-top: 0!important;
@@ -1100,6 +1181,10 @@ a, p a {
 
 .m-t-46{
     margin-top: 46px !important;
+}
+
+.m-t-90{
+    margin-top: 90px !important;
 }
 .m-b-0{
     margin-bottom: 0!important;
@@ -1127,13 +1212,16 @@ a, p a {
     margin-bottom: 60px!important;
 }
 
+.m-b-90{
+    margin-bottom: 90px !important;
+}
+
 .m-t-40{
     margin-top: 40px!important;
 }
 .m-t-60{
     margin-top: 60px!important;
 }
-
 
 /*margin right*/
 .m-r-20{
@@ -1554,17 +1642,79 @@ header.scroll {
     margin: 0 auto;
 
 }
+
+.heading-style1{
+    color: #0B1632;
+    font-weight: 400;
+    font-family: 'EB Garamond', serif;
+    font-size: 35px;
+    text-align: center;
+}
+.para-bottom-border{
+    border-bottom: 1px solid #191C3B;
+    padding:5px;
+    color:#060608;
+}
+.oil-color{
+    color:#060608;
+}
+.oil-color2{
+color:#222222!important;
+    font-size: 12px;
+}
+
 .hollow-btn{
     border: 2px solid #fff;
     color: #fff;
     cursor: pointer;
     margin-top: 20px;
     height: 40px;
+    padding: 15px 30px;
     width: 150px;
     border-radius: 4px;
     background-color: transparent;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+
+}
+
+
+.hollow-btn1{
+    border: 2px solid #000203;
+   color: #000203;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 40px;
+    padding: 15px 30px;
+    width: 150px;
+    border-radius: 4px;
+    background-color: transparent;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+}
+.oil-btn-solid{
+    background: #091233;
+    color:#ffffff ;
+    display: inline-block;
+    position: relative;
+    outline: 0;
+    padding: 10px 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    -webkit-transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
+    -moz-transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
+    transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .oil-para-border{
@@ -1619,3 +1769,19 @@ header.scroll {
     float: left;
     margin-right: 10px;
 }
+
+.card-title {
+    color: #0B1632;
+    font-weight: 200;
+    font-size: 16px;
+}
+.card-title::before {
+    content: "";
+    border-bottom: 4px solid #000000;
+    margin-top: 35px;
+   margin-left: 30px;
+    width: 70px;
+    position: absolute;
+}
+
+
