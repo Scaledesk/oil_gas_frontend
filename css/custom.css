@@ -1089,6 +1089,11 @@ a, p a {
 .w-card-style{
     margin-top:10px;
 }
+.card-fixed-size{
+    width:305px;
+    height:395px;
+
+}
 
 
 .intro-sec{
@@ -1702,6 +1707,7 @@ position:relative;
 
 header {
     position: fixed;
+    top:0;
     width: 100%;
     background: transparent;
     color: #fff;
