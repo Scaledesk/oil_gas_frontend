@@ -63,7 +63,7 @@ body{
     background: url("../img/gray1.png") center no-repeat ;
     width: 100%;
     background-size: cover;
-    height: 565px;
+    height: 632px;
 
     position: relative;
 }
@@ -133,20 +133,21 @@ body{
 .navbar-default .navbar-nav>.active>a{
     color: #fff;
     background-color: transparent ;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
     transition: all .5s ease;
 
 }
 
 .navbar-default .navbar-nav>.active>a:hover{
-
+color:#ffffff;
+    border-bottom: 2px solid #fff;
     background-color: transparent ;
     transition: all .5s ease;
 
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #ffffff;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     background-color: transparent;
     transition: all .5s ease;
 }
@@ -321,9 +322,10 @@ li .footer-link a{
     background: #EB7C08;
     color: #ffffff;
     font-size: 14px;
+    margin-left: -4px;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
-    padding: 15px 15px 16px !important;
+    padding: 15px 10px 15px !important;
 }
 
 .oil-btn2{
@@ -382,7 +384,7 @@ li .footer-link a{
 }
 ul li {
     text-decoration: none;
-    font-size:18px;
+    font-size:16px;
 }
 .oil-heading{
     font-family: 'open sans', sans-serif;
@@ -1186,7 +1188,7 @@ a, p a {
 
 /*////Margins//////*/
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
 
     .m-t-0{
         margin-top: 0!important;
@@ -1705,6 +1707,9 @@ position:relative;
 
 }
 
+.nav>li>a {
+    padding: 5px 9px;}
+
 header {
     position: fixed;
     top:0;
@@ -1761,7 +1766,7 @@ color:#222222!important;
     cursor: pointer;
     /* margin-top: 20px; */
     height: 40px;
-    padding: 0!important;
+    padding: 0;
     width: 150px;
     border-radius: 2px;
     background-color: transparent;
@@ -1994,10 +1999,56 @@ font-size: 25px;
     .img-section {
         width: 100%;
     }
-    .login-section{
+
+    .login-section {
         background-color: #fafafa;
     }
 
+    /*  iphone header*/
+    .hmbr {
+        width: 100%;
+        margin: 0px 0px;
+        background-color: #EB7C08;
+        padding: 10px;
+    }
+.hollow-btn{
+    padding:8px;
+}
+
+   
+
+    .navigation{
+        width: 50%;
+        background: #EB7C08;
+        left: -333px;
+        position: relative;
+        height:100vh;
+        /*transition: all .4s ease;*/
+
+    }
+
+    .navigation ul{
+        list-style: none;
+    }
+    .navigation ul li{
+        color: #fff;
+        font-size: 14px;
+        padding: 6px 15px;
+        font-family: "open sans" , sans-serif;
+    }
+
+    .navigation span{
+        color: #fff;
+        font-size: 19px;
+        margin-left: 92%;
+        cursor: pointer;;
+    }
+
+
+
+
+    /*  ends here
+  */
 
     .banner-image2{
         height: 100%;
