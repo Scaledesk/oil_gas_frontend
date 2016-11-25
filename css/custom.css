@@ -807,12 +807,7 @@ a, p a {
     .vc_col-lg-offset-1 {
         margin-left: 8.33333333%;
     }
-    @media (min-width: 1200px){
-        .vc_col-lg-10 {
-            width: 83.33333333%;
-        }
-
-    }}
+ }
 .vc_column_container>.vc_column-inner {
     box-sizing: border-box;
     padding-left: 15px;
@@ -1766,7 +1761,7 @@ color:#222222!important;
     cursor: pointer;
     /* margin-top: 20px; */
     height: 40px;
-    padding: 0;
+    padding: 0 important;
     width: 150px;
     border-radius: 2px;
     background-color: transparent;
@@ -2015,7 +2010,7 @@ font-size: 25px;
     padding:8px;
 }
 
-   
+
 
     .navigation{
         width: 50%;
