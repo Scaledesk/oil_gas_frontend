@@ -807,7 +807,12 @@ a, p a {
     .vc_col-lg-offset-1 {
         margin-left: 8.33333333%;
     }
- }
+    @media (min-width: 1200px){
+        .vc_col-lg-10 {
+            width: 83.33333333%;
+        }
+
+    }}
 .vc_column_container>.vc_column-inner {
     box-sizing: border-box;
     padding-left: 15px;
@@ -1761,7 +1766,7 @@ color:#222222!important;
     cursor: pointer;
     /* margin-top: 20px; */
     height: 40px;
-    padding: 0 important;
+    padding: 0!important;
     width: 150px;
     border-radius: 2px;
     background-color: transparent;
@@ -1994,23 +1999,24 @@ font-size: 25px;
     .img-section {
         width: 100%;
     }
-
-    .login-section {
+    .login-section{
         background-color: #fafafa;
     }
 
-    /*  iphone header*/
-    .hmbr {
+
+  /*  iphone header*/
+    .hmbr{
         width: 100%;
-        margin: 0px 0px;
+       padding:10px;
+        padding: 15px;
         background-color: #EB7C08;
-        padding: 10px;
+
     }
-.hollow-btn{
-    padding:8px;
-}
 
+    header.scroll {
+        background:transparent;
 
+    }
 
     .navigation{
         width: 50%;
