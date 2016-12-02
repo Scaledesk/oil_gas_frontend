@@ -3,7 +3,7 @@ $('.hmbr i').click(function(){
     $(this).toggleClass('active');
     if($(this).hasClass('active')){
 
-        $('.navigation').animate({left:'-333px'});
+        $('.navigation').animate({left:'-385px'});
 
 
     }
@@ -22,6 +22,6 @@ $('.navigation').click(function(){
 
 $(document).click(function(){
     //alert('click')
-    $('.navigation').animate({left:'-333px'});
+    $('.navigation').animate({left:'-385px'});
 });
 
