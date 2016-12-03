@@ -1336,6 +1336,10 @@ a, p a {
     .p-t-40{
         padding-top: 40px!important;
     }
+.p-t-10{
+    padding-top: 10px!important;
+
+}
 
     .p-b-20{
         padding-bottom: 20px!important;
@@ -1821,7 +1825,11 @@ header.scroll {
     background-color: #091233;
 }
 
+.hollow2-btn{
+    color:#091233;
+}
 
+/*
 .hollow-btn1{
     border: 1px solid #000203;
     color: #000203;
@@ -1843,7 +1851,7 @@ header.scroll {
     background-color: #E98E26;
     color:#ffffff;
     border: 1px solid #ffffff;
-}
+}*/
 .oil-btn-solid{
     background: #091233;
     color:#ffffff ;
