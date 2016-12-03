@@ -230,6 +230,10 @@ li .footer-link a{
 /*width: 5%;*/
 /*position: absolute;*/
 /*}*/
+
+.custom-width{
+    width:300px;
+}
 .oil-para{
     font-family:'Open Sans', sans-serif;
     font-size: 14px;
