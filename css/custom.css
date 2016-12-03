@@ -148,7 +148,7 @@ position:relative;
 }
 
 .navbar-default .navbar-nav>.active>a{
-    color: #fff;
+    color: #0B1632;
     background-color: transparent ;
     border-bottom: 1px solid #fff;
     transition: all .5s ease;
@@ -156,14 +156,14 @@ position:relative;
 }
 
 .navbar-default .navbar-nav>.active>a:hover{
-    color:#ffffff;
+    color:#0B1632;
     border-bottom: 2px solid #fff;
     background-color: transparent ;
     transition: all .5s ease;
 
 }
 .navbar-default .navbar-nav>li>a:hover {
-    color: #ffffff;
+    color: #0B1632;
     border-bottom: 1px solid #ffffff;
     background-color: transparent;
     transition: all .5s ease;
@@ -1738,7 +1738,7 @@ css by garima-->*/
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #fff;
+    color: #0B1632;
 
 }
 
@@ -1756,7 +1756,7 @@ header {
 }
 
 header.scroll {
-    background:#009291;
+    background:#f5f5f5;
 /*    background:#ebebeb;*/
     height:62px;
 
@@ -1801,14 +1801,14 @@ header.scroll {
 }
 
 .hollow-btn{
-    border: 1px solid #fff;
+    border: 1px solid #0B163C;
     color: #fff;
     cursor: pointer;
     /* margin-top: 20px; */
     height: 40px;
     padding: 0!important;
     width: 140px;
-    border-radius: 2px;
+    border-radius: 30px;
     background-color: transparent;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -1840,7 +1840,7 @@ header.scroll {
 }
 
 .hollow-btn1:hover{
-    background-color: #091233;
+    background-color: #E98E26;
     color:#ffffff;
     border: 1px solid #ffffff;
 }
