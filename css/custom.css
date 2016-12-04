@@ -27,6 +27,7 @@ position:relative;
 
 .banner-image::before {
     background: rgba(17, 17, 17, 0.38);
+    
 }
 
 .banner-image::before{
@@ -85,9 +86,9 @@ position:relative;
 
 
 .banner-image3{
-    background: url("../img/images (1).jpg") center no-repeat ;
+    background: url("../img/counter.jpg") center no-repeat ;
     width: 100%;
-    z-index: 1;
+/*    z-index: 1;*/
     background-size: cover;
     height: 600px;
     position: relative;
@@ -96,6 +97,7 @@ position:relative;
 
 .banner-image3::before {
     background: rgba(17, 17, 17, 0.38);
+    background: rgba(10,14,41,0.75);
 }
 
 .banner-image3::before{
@@ -236,7 +238,7 @@ li .footer-link a{
 }
 .oil-para{
     font-family:'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 20px;
     margin-top:18px;
     margin-bottom: 28px;
@@ -261,6 +263,7 @@ li .footer-link a{
     color: #fff;
     font-weight: 500;
     font-family: 'EB Garamond', serif;
+  
     font-size: 85px;
     margin-bottom: 40px;
 }
@@ -407,7 +410,7 @@ li .footer-link a{
     line-height: 1;
     color: #ffffff;
   /*  background:#EB7C08!important;*/
-    background: rgba(0, 146, 145, 0.29)!important;
+    background: rgba(0, 146, 145, 0.90)!important;
     text-align: center;
     border: 1px solid transparent;
     border-radius: 0 !important;
@@ -1789,7 +1792,7 @@ header {
 header.scroll {
     background:#f5f5f5;
 /*    background:#ebebeb;*/
-    height:62px;
+/*    height:62px;*/
 
 
 }
@@ -1819,8 +1822,10 @@ header.scroll {
 
 .para-bottom-border{
     border-bottom: 1px solid #191C3B;
+    border-bottom: 1px solid #f5f5f5;
     padding:5px;
     color:#060608;
+    color: aliceblue;
 
 }
 .oil-color{
@@ -1828,7 +1833,7 @@ header.scroll {
 }
 .oil-color2{
     color:#222222!important;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .hollow-btn{
@@ -1858,8 +1863,8 @@ header.scroll {
 
 
 .hollow-btn1{
-    border: 1px solid #000203;
-    color: #000203;
+    border: 1px solid #eee;
+    color: #eee;
     cursor: pointer;
     height: 40px;
     width: 150px;
@@ -1867,7 +1872,7 @@ header.scroll {
     text-align: center;
     display: block;
     margin: 0 auto;
-    border-radius: 4px;
+    border-radius: 2px;
     background-color: transparent;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -1886,7 +1891,7 @@ header.scroll {
     position: relative;
     outline: 0;
     padding: 10px 30px;
-    font-weight: bold;
+/*    font-weight: bold;*/
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.7em;
@@ -1906,7 +1911,7 @@ background-color:#EB7C08;}
 .oil-para-border{
     border:2px solid rgba(49, 62, 94, 0.58);
     padding: 30px;
-    transition: all .8s;
+/*    transition: all .8s;*/
 }
 .oil-para-border:hover{
     border:3px solid rgba(49, 62, 94, 0.58);
@@ -1918,6 +1923,10 @@ background-color:#EB7C08;}
     margin-top: 20px;
 }
 
+h5{
+    
+    font-size: 16px;
+}
 
 /*testimonial two*/
 .carousel-control.left,.carousel-control.right  {background:none;width:25px;}
