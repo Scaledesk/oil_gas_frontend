@@ -152,7 +152,7 @@ position:relative;
 .navbar-default .navbar-nav>.active>a{
     color: #0B1632;
     background-color: transparent ;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #0B1632;
     transition: all .5s ease;
 
 }
@@ -166,7 +166,7 @@ position:relative;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #0B1632;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #0B1632;
     background-color: transparent;
     transition: all .5s ease;
 }
@@ -237,12 +237,12 @@ li .footer-link a{
     width:300px;
 }
 .oil-para{
-    font-family:'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    margin-top:18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.65rem;
+    line-height: 22px;
+    margin-top: 18px;
     margin-bottom: 28px;
-    color:#1F1F1F;
+    color: #333333;
     overflow-x: hidden!important;
     -webkit-font-smoothing: antialiased;
 }
@@ -262,21 +262,27 @@ li .footer-link a{
 .v-large-title{
     color: #fff;
     font-weight: 500;
-    font-family: 'EB Garamond', serif;
-  
+
+   /* font-family: 'Yrsa', serif;*/
+
+    font-family: 'Overpass',sans-serif;
     font-size: 85px;
     margin-bottom: 40px;
 }
 .large-title{ color: #0F1339;
     font-weight: 500;
-    font-family: 'EB Garamond', serif;
+
+ /*   font-family: 'Yrsa', serif;*/
+    font-family: 'Overpass',sans-serif;
 
     font-size: 65px;}
 
 .title {
     color: #0B1632;
     font-weight: 400;
-    font-family: 'EB Garamond', serif;
+
+  /*  font-family: 'Yrsa', serif;*/
+    font-family: 'Overpass',sans-serif;
     font-size: 45px;
 }/*
 .title::before {
@@ -344,7 +350,7 @@ li .footer-link a{
 }
 
 .footer-subscribe-btn {
-    background: #009291;
+    background: rgba(235, 124, 8, 0.79);
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
@@ -410,7 +416,7 @@ li .footer-link a{
     line-height: 1;
     color: #ffffff;
   /*  background:#EB7C08!important;*/
-    background: rgba(0, 146, 145, 0.90)!important;
+    background: rgba(235, 124, 8, 0.79)!important;
     text-align: center;
     border: 1px solid transparent;
     border-radius: 0 !important;
@@ -575,7 +581,6 @@ a:hover{
     list-style-type:none;
     display: inline-block;
     margin-right: 5px;
-    border:2px solid #ffffff;
     box-sizing: content-box;
 
 }
@@ -1122,6 +1127,7 @@ a, p a {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;
     background-color: #ffffff;
     padding:20px 20px 30px 20px;
+    max-height:400px;
 
 }
 
@@ -1764,7 +1770,7 @@ css by garima-->*/
 
 .nav-custom{
     margin-bottom: 0px;
-    background-color: transparent!important;
+    background-color: rgba(255, 255, 255, 0.32)!important;
     border-color: rgba(0, 0, 0, 0.12);
     position:relative;
     border-radius: 0;
@@ -1773,6 +1779,11 @@ css by garima-->*/
 
 .navbar-default .navbar-nav>li>a {
     color: #0B1632;
+
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
 
 }
 
@@ -1813,11 +1824,22 @@ header.scroll {
 .heading-style1{
     color: #0B1632;
     font-weight: 400;
-    font-family: 'EB Garamond', serif;
+
+/*    font-family: 'Yrsa', serif;*/
+    font-family: 'Overpass',sans-serif;
     font-size: 35px;
     text-align: center;
 }
 
+.heading-style2{
+    color: #ffffff;
+    font-weight: 400;
+
+   /* font-family: 'Yrsa', serif;*/
+    font-family: 'Overpass',sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
 
 
 .para-bottom-border{
@@ -1854,7 +1876,9 @@ header.scroll {
 }
 
 .hollow-btn:hover{
-    background-color: #091233;
+    background-color: #F7B46B!important;
+    color:#fff!important;
+    border-color: #ffffff!important;
 }
 
 .hollow2-btn{
@@ -2025,14 +2049,16 @@ h5{
     content: "";
     border-bottom: 4px solid #000000;
     margin-top: 35px;
-    margin-left: 30px;
+    margin-left: 20px;
     width: 70px;
     position: absolute;
 }
 .white-title{
     color: #fff;
     font-weight: 400;
-    font-family: 'EB Garamond', serif;
+/*
+    font-family: 'Yrsa', serif;*/
+    font-family: 'Overpass',sans-serif;
     font-size: 25px;
     padding:10px;
 }
