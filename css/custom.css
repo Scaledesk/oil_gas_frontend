@@ -1151,9 +1151,20 @@ a, p a {
 }
 
 .greycard2-oil {
-    background-color: #E5E5E5;
-    border-radius: 2px;
-    padding: 10px;
+  /*  background-color: #E5E5E5;*/
+    background-color: #fbfafa;
+    border-radius: 8px;
+
+}
+
+.wrapper-box{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.13);
+    padding: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+    background-color: #fbfafa;
+}
+.greycard2-oil p{
+    min-height: 50px;
 }
 
 /*by garima*/
@@ -1933,15 +1944,17 @@ header.scroll {
 background-color:#EB7C08;}
 
 .oil-para-border{
-    border:2px solid rgba(49, 62, 94, 0.58);
+   /* border:2px solid rgba(49, 62, 94, 0.58);*/
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.13);
+    border-radius: 8px 8px 0 0;
     padding: 30px;
 /*    transition: all .8s;*/
 }
-.oil-para-border:hover{
+/*.oil-para-border:hover{
     border:3px solid rgba(49, 62, 94, 0.58);
     padding: 29px;
 
-}
+}*/
 
 .mobile-m-t-20{
     margin-top: 20px;
@@ -2081,6 +2094,11 @@ h5{
     text-align: center;
 
 
+}
+.grey-bg {
+
+    background-color: #edebe6;
+    padding-bottom: 0px!important;
 }
 
 
