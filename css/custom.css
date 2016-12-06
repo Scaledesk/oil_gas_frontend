@@ -1127,7 +1127,7 @@ a, p a {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;
     background-color: #ffffff;
     padding:20px 20px 30px 20px;
-    max-height:400px;
+    max-height:430px;
 
 }
 
@@ -1201,8 +1201,16 @@ a, p a {
 }
 
 .sec-margin-left{
-    margin-left:32px;
+    margin-left:22px;
 
+}
+
+.b2b-title{
+    color: rgb(150, 149, 145);
+    margin-top: 45px;
+    font-style: normal;
+    font-weight: 300;
+}
 }
 
 .firstsec-margin-left{
@@ -1947,7 +1955,8 @@ background-color:#EB7C08;}
    /* border:2px solid rgba(49, 62, 94, 0.58);*/
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.13);
     border-radius: 8px 8px 0 0;
-    padding: 30px;
+  /*  padding: 30px;*/
+    padding: 15px 0px 30px 15px;
 /*    transition: all .8s;*/
 }
 /*.oil-para-border:hover{
@@ -2086,6 +2095,14 @@ h5{
     box-sizing: border-box;
     margin: 0 auto;
 
+}
+
+
+.fa-custom{
+    font-size:35px!important;
+    color:rgba(235, 124, 8, 0.79)!important;
+    text-align:right!important;
+    width: 40px!important;
 }
 
 .cogs-icon>i{
