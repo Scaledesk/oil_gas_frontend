@@ -10,6 +10,7 @@ body{
 }
 
 
+
 .banner-image{
     background: url("../img/download.jpg") center no-repeat ;
     width: 100%;
@@ -1211,7 +1212,7 @@ a, p a {
     font-style: normal;
     font-weight: 300;
 }
-}
+
 
 .firstsec-margin-left{
     margin-left:60px;
@@ -1719,7 +1720,8 @@ h1 {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #777b9d;
+    /*border-top-color: #777b9d;*/
+    border-top-color: #CE6F0D;
 
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -1734,7 +1736,8 @@ h1 {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #e74c3c;
+ /*   border-top-color: #e74c3c;*/
+    border-top-color: #CE6F0D;
 
     -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -1749,7 +1752,9 @@ h1 {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #a99072;
+/*    border-top-color: #a99072;*/
+    /*border-top-color: #8D8C95;*/
+    background: url("");
 
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
