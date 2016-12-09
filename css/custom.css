@@ -211,6 +211,11 @@ body{
 }
 
 
+.oil-input-field{
+    margin-bottom:5px;
+}
+
+
 li .footer-link a{
     color: #ffffff !important;
 }
@@ -387,7 +392,7 @@ li .footer-link a{
     padding: 19px 25px;
     font-size: 20px !important;
     line-height: 1.42857143;
-    color: #000;
+    color: #EF973B;
     background-color: #fff;
     background-image: none;
     border: 1px solid transparent;
@@ -399,8 +404,12 @@ li .footer-link a{
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
+.signup{
+   color:rgba(235, 124, 8, 0.79);
+}
+
 .signup:hover{
-    color: #feee41;
+    color:#0A0E29;
 }
 .oil-form-control{
     height: 35px;
@@ -414,7 +423,10 @@ li .footer-link a{
 }
 
 .oil-form-label{
-    font-size: 16px;
+    float: left;
+    width: 160px;
+    padding-top: 5px;
+    text-align: right;
     font-weight: 200;
     color: #0B1632;
 }
@@ -1039,7 +1051,7 @@ a, p a {
 .login-form h3 {
     margin: 40px 0;
 }
-.login-form .form-group > input {
+/*.login-form .form-group > input {
     padding: 20px;
     border-radius: 0;
 }
@@ -1047,7 +1059,7 @@ a, p a {
     padding: 20px;
     border-radius: 0;
     width: 100%;
-}
+}*/
 .m-10{
     margin: 10px;
 }
@@ -1976,6 +1988,8 @@ header.scroll {
 .oil-color{
     color:#060608;
 }
+
+
 .oil-color2{
     color:#222222!important;
     font-size: 14px;
@@ -1984,6 +1998,10 @@ header.scroll {
 .oil-color3{
     color:rgba(235, 124, 8, 0.79)!important;
     font-size: 20px;
+}
+
+.oil-color4{
+    color:#6F7372;
 }
 
 .hollow-btn{
@@ -2126,6 +2144,8 @@ header.scroll {
 .mobile-m-t-20{
     margin-top: 20px;
 }
+
+
 
 h5{
     
@@ -2415,3 +2435,16 @@ h5{
 }
 
 
+#oil-colo .row >input, input[type="email"] {
+    height: 45px!important;
+    border-radius: 0px;
+
+}
+
+
+
+#oil-colo .row >input, input[type="password"] {
+    height: 45px!important;
+    border-radius: 0px;
+
+}
