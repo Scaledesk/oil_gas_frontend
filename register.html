@@ -23,7 +23,198 @@
 
 <section class="login-section img-section">
     <div class="row">
-        <div class="col-md-6 hidden-xs">
+
+        <div class="col-md-6 login-form card-oil register-padding">
+            <h3 class="oil-color text-center">Register</h3>
+
+            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-xs-6">
+                    <label for="name" class="oil-form-label">First Name:</label><br />
+                    <input id="name" class="oil-inputfield" name="name" type="text" value="" size="30" /><br />
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="name" class="oil-form-label">Last Name:</label><br />
+                        <input id="name" class="oil-inputfield" name="name" type="text" value="" size="30" /><br />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label for="email" class="oil-form-label">Your email:</label><br />
+                        <input id="email" class="oil-inputfield" class="input" name="email" type="text" value="" size="30" /><br />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <label for="name" class="oil-form-label">Date of Birth:</label><br />
+                        <input id="name" class="oil-inputfield" name="name" type="text" value="" size="30" /><br />
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="name" class="oil-form-label">Phone No.:</label><br />
+                        <input id="name" class="oil-inputfield" name="name" type="text" value="" size="30" /><br />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <label for="name" class="oil-form-label">Password:</label><br />
+                        <input id="name" class="oil-inputfield" name="name" type="password" value="" size="30" /><br />
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="name" class="oil-form-label">conform Password:</label><br />
+                        <input id="name" class="oil-inputfield" name="name" type="password" value="" size="30" /><br />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label for="name" class="oil-form-label">Gender:</label><br />
+                        <div class="row">
+                            <div class="col-xs-6">
+                        <input type="radio" name="gender" value="male" checked><span style="color:#A6A59F"> Male</span><br>
+                                </div>
+
+                            <div class="col-xs-6">
+                        <input type="radio" name="gender" value="female"><span style="color:#A6A59F"> Female </span><br><br />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               <!-- <div class="row">
+                    <label for="email" class="oil-form-label">Your email:</label><br />
+                    <input id="email" class="oil-inputfield" class="input" name="email" type="text" value="" size="30" /><br />
+                </div>-->
+
+                <input id="submit_button" type="submit" value="Submit" class="oil-color" />
+            </form>
+            <!--   <form action="">
+
+                   <div class="f-input-group">
+                       <div class="row">
+                           <div class="col-xs-6">
+
+                               <label>Company</label>
+                               <input type="text" id="name" class="float-input" placeholder="Enter your First name">
+
+                           </div>
+                           <div class="col-xs-6">
+
+                               <label>Company</label>
+                               <input type="text" id="name" class="float-input" placeholder="Enter your Last name">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div >
+                       <label>Email</label>
+                       <input type="email" id="mobile" class="float-input" placeholder="Enter your email">
+                   </div>
+
+                   <div class="f-input-group">
+                       <div class="row">
+
+                           <div class="col-xs-12">
+
+                               <select class="form-control oil-form-control">
+                                   <option>Male</option>
+                                   <option>Female</option>
+                               </select>
+
+                           </div>
+
+                       </div>
+                   </div>
+
+                   <div class="f-input-group">
+                       <div class="row">
+                           <div class="col-xs-6">
+                       <label class="float-label" for="mobile">Password</label>
+                       <input type="password" id="" class="float-input" placeholder="Enter Your password ">
+                           </div>
+
+                           <div class="col-xs-6">
+                               <label class="float-label" for="mobile">Confirm Password</label>
+                               <input type="password" id="" class="float-input" placeholder="Confirm your entered password ">
+                           </div>
+                       </div>
+                   </div>
+                  &lt;!&ndash; <div class="f-input-group">
+                       <label class="float-label" for="mobile">Confirm Password</label>
+                       <input type="password" id="" class="float-input" placeholder="Confirm your entered password ">
+                   </div>&ndash;&gt;
+
+                   <div class="f-input-group">
+                       <div class="row">
+                           <div class="col-xs-12">
+
+                               <label class="float-label" for="name">Company</label>
+                               <input type="text" id="name" class="float-input" placeholder="Enter your Company name">
+
+                           </div>
+                       </div>
+                   </div>
+                   <div class="f-input-group">
+                       <div class="row">
+                           <div class="col-xs-6">
+
+                               <label class="float-label" for="name">Company</label>
+                               <input type="text" id="name" class="float-input" placeholder="Company Email">
+
+                           </div>
+                           <div class="col-xs-6">
+
+                               <label class="float-label" for="name">Company</label>
+                               <input type="text" id="name" class="float-input" placeholder="Company Phone No.">
+
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="f-input-group">
+                       <label class="float-label" for="mobile">How did you hear about us?</label>
+                       <select class="form-control oil-form-control">
+                           <option>How did you hear about us ?</option>
+                           <option>Newspaper</option>
+                           <option>Internet</option>
+                           <option>Social Network</option>
+                           <option>Other</option>
+                       </select>
+                   </div>
+
+                   <div class="row">
+                       <div class="col-xs-12 text-center">
+                   <button class="btn oil-btn-solid"><i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;
+                       Register
+                   </button>
+                       </div>
+                   </div>
+                &lt;!&ndash;   <div class="row">
+
+                       <div class="col-md-12">
+                           <p class="m-10">
+                               <a href="login.html" class="m-10 text-color">Already Registered ? <span class="signup">Login Here</span></a>
+                           </p>
+                       </div>
+                   </div>&ndash;&gt;
+
+
+                   &lt;!&ndash;<div class="row visible-xs">&ndash;&gt;
+                   &lt;!&ndash;<div class="col-xs-12">&ndash;&gt;
+                   &lt;!&ndash;<h3>Login With Social Media</h3>&ndash;&gt;
+                   &lt;!&ndash;<ul class="social-connect">&ndash;&gt;
+                   &lt;!&ndash;<li><a href=""><i class="fa fa-facebook"></i></a></li>&ndash;&gt;
+                   &lt;!&ndash;<li><a href=""><i class="fa fa-twitter"></i></a></li>&ndash;&gt;
+                   &lt;!&ndash;<li><a href=""><i class="fa fa-google-plus"></i></a></li>&ndash;&gt;
+                   &lt;!&ndash;</ul>&ndash;&gt;
+                   &lt;!&ndash;</div>&ndash;&gt;
+                   &lt;!&ndash;</div>&ndash;&gt;
+               </form>-->
+        </div>
+        <div class="col-md-6 login-form-rightside  hidden-xs">
             <!--<h1>Nexus</h1>-->
             <div class="row">
                 <div class="col-xs-12">
@@ -37,63 +228,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 login-form register-padding">
-            <h3>Register</h3>
-            <form action="">
-                <div class="f-input-group">
-                    <label class="float-label" for="name">Company</label>
-                    <input type="text" id="name" class="float-input" placeholder="Enter your Company name">
-                </div>
-                <div class="f-input-group">
-                    <label class="float-label" for="Email">Name</label>
-                    <input type="text" id="email" class="float-input" placeholder="Enter your name">
-                </div>
-                <div class="f-input-group">
-                    <label class="float-label" for="mobile">Email</label>
-                    <input type="email" id="mobile" class="float-input" placeholder="Enter your email">
-                </div>
-                <div class="f-input-group">
-                    <label class="float-label" for="mobile">How did you hear about us?</label>
-                    <select class="form-control oil-form-control">
-                        <option>How did you hear about us ?</option>
-                        <option>Newspaper</option>
-                        <option>Internet</option>
-                        <option>Social Network</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div class="f-input-group">
-                    <label class="float-label" for="mobile">Password</label>
-                    <input type="password" id="" class="float-input" placeholder="Enter Your password ">
-                </div>
-                <div class="f-input-group">
-                    <label class="float-label" for="mobile">Confirm Password</label>
-                    <input type="password" id="" class="float-input" placeholder="Confirm your entered password ">
-                </div>
-                <div class="row">
 
-                    <div class="col-md-12">
-                        <p class="m-10">
-                            <a href="login.html" class="m-10 text-color">Already Registered ? <span class="signup">Login Here</span></a>
-                        </p>
-                    </div>
-                </div>
-                <button class="btn register-btn pull-left" style="background: #feee41;color: #484848"><i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;
-                    Register
-                </button>
-
-                <!--<div class="row visible-xs">-->
-                    <!--<div class="col-xs-12">-->
-                        <!--<h3>Login With Social Media</h3>-->
-                        <!--<ul class="social-connect">-->
-                            <!--<li><a href=""><i class="fa fa-facebook"></i></a></li>-->
-                            <!--<li><a href=""><i class="fa fa-twitter"></i></a></li>-->
-                            <!--<li><a href=""><i class="fa fa-google-plus"></i></a></li>-->
-                        <!--</ul>-->
-                    <!--</div>-->
-                <!--</div>-->
-            </form>
-        </div>
 
     </div>
 </section>

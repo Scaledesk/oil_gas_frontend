@@ -409,6 +409,15 @@ li .footer-link a{
     border-radius: 0;
 
 }
+.oil-inputfield{
+    width:100%;
+}
+
+.oil-form-label{
+    font-size: 16px;
+    font-weight: 200;
+    color: #0B1632;
+}
 .input-group-addon {
     font-family: 'Open Sans', sans-serif;
     padding: 12px 30px;
@@ -1054,6 +1063,11 @@ a, p a {
     margin: 20px auto !important;
     position: relative !important;
 }
+
+.f-input-half{
+    width: 50% !important;
+
+}
 .float-input {
     border: none !important;
     border-bottom: 1px solid #999 !important;
@@ -1084,8 +1098,16 @@ a, p a {
     height: 100px !important;
 
 }
+
+/*
+.form-text-style{
+    color:#A9A9AE;
+    font-size: 16px;
+    font-weight:100;
+    padding-left: 10px;
+}*/
 .img-section {
-    background: url('../img/BANNER.jpg') center no-repeat;
+    background: url('../img/download.jpg') center no-repeat;
     /*width: 100%;*/
     /*height: 100vh;*/
     background-size: cover;
@@ -1111,6 +1133,7 @@ a, p a {
     color: #fff;
     margin: 20px 0;
     border-radius: 0;
+
 }
 .register-btn:hover{
     background-color: #00a8e6;
@@ -1129,18 +1152,72 @@ a, p a {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;
     background-color: #ffffff;
     padding:20px 20px 30px 20px;
-    max-height:430px;
 
+
+}
+
+.dropdown-custom{
+color: #6D7170;
+    background-color: #F9F9F9;
+font-size: 16px;
+width: 100%;
+padding: 12px 12px;
+margin-bottom: 20px;
+    border-radius: 0px;
+}
+
+.filter-btn-1{
+    border-radius: 0px;
+    width: 100%;
+    color: #fff;
+    background: rgba(235, 124, 8, 0.79);
+
+}
+
+.filter-buttons{
+
+}
+
+.filter-btn-2{
+    border-radius: 0px;
+    width: 100%;
+    background-color:#D2D2D2;
+
+}
+
+.search-card-oil{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;
+    background-color: #ffffff;
+    padding:30px;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
 .w-card-style{
     margin-top:10px;
+    max-height:430px;
+
 }
 .card-fixed-size{
     width:305px;
     height:395px;
 
 }
+
+.left-brandlogo {
+    border-right: 1px solid #D7D7D7;
+    /* width: 60px; */
+    height: 175px;
+    padding-left: 0px;
+    padding-right: 5px;
+    padding-top: 70px;
+}
+.bookmark-style{
+    text-align: right;
+    margin-top: -32px;
+    font-size: 12px;
+}
+
 
 
 .intro-sec{
@@ -1228,6 +1305,14 @@ a, p a {
 /*here's end*/
 
 .login-form {
+    height: 100vh;
+    padding: 140px 70px;
+    color: #ffffff;
+
+}
+
+
+.login-form-rightside {
     height: 100vh;
     padding: 140px 70px;
     background: rgba(0, 0, 0, 0.48);
@@ -1801,6 +1886,15 @@ css by garima-->*/
 
 }
 
+.nav-custom2{
+    margin-bottom: 0px;
+    background-color: #ffffff !important;
+    border-color: rgba(0, 0, 0, 0.12);
+    position:relative;
+    border-radius: 0;
+
+}
+
 .navbar-default .navbar-nav>li>a {
     color: #0B1632;
 
@@ -1809,6 +1903,11 @@ css by garima-->*/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     background-color: transparent;
 
+}
+
+
+.searchresult-body{
+    background-color:#f3f3f3;
 }
 
 .nav>li>a {
@@ -1882,6 +1981,11 @@ header.scroll {
     font-size: 14px;
 }
 
+.oil-color3{
+    color:rgba(235, 124, 8, 0.79)!important;
+    font-size: 20px;
+}
+
 .hollow-btn{
     border: 1px solid #0B163C;
     color: #fff;
@@ -1932,6 +2036,7 @@ header.scroll {
     color:#ffffff;
     border: 1px solid #ffffff;
 }
+
 .oil-btn-solid{
     background: #091233;
     color:#ffffff ;
@@ -1953,9 +2058,57 @@ header.scroll {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.oil-btn-solid:hover{
-background-color:#EB7C08;}
 
+.oil-btn-solid:hover{
+    background-color:#EB7C08;}
+
+.oil-btn-solid-search{
+    background: #E0DEDF;
+    color:#6D7170;
+    display: inline-block;
+    position: relative;
+    outline: 0;
+    padding: 6px 22px;
+    margin-top:18px;
+    /*    font-weight: bold;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
+    -moz-transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
+    transition: color .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.oil-btn-solid-search:hover{
+    background-color:#EB7C08;
+}
+/*
+.claimed-btn {
+    background: url("../img/three.png") right no-repeat;
+    border: 1px #E0DEDF solid;
+    display: inline-block;
+    padding: 0px 22px 0px 4px;
+    background-position-x: 92%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+    text-transform: uppercase;
+}*/
+
+.claimed-btn{
+    border: 1px solid #CECECE;
+    padding: 4px;
+    color: #9C9B9C;
+    border-radius: 0px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
 .oil-para-border{
    /* border:2px solid rgba(49, 62, 94, 0.58);*/
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.13);
