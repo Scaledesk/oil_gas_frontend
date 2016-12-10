@@ -1316,11 +1316,32 @@ margin-bottom: 20px;
 
 /*here's end*/
 
+
+.signup-form{
+   width:95%;
+
+}
+
 .login-form {
     height: 100vh;
     /*  padding: 140px 70px;*/
+
+    padding-right: 4px;
+    padding-left: 20px;
     color: #ffffff;
 
+}
+
+.login-btn{
+    width:35%;
+}
+
+.login-width{
+    width:70%!important;
+}
+
+.label-class{
+    font-weight: normal;
 }
 
 
@@ -2015,6 +2036,7 @@ header.scroll {
 
 .oil-color4{
     color:#6F7372;
+    font-size:14px;
 }
 
 .hollow-btn{
@@ -2462,6 +2484,11 @@ h5{
 
 }
 */
+
+.input-register-fields{
+    border-radius: 0px;
+}
+
 
 
 .input-login-fields{

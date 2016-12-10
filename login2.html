@@ -20,6 +20,99 @@
 </head>
 <body>
 
+<!--newheader Start-->
+<div>
+    <header>
+        <!--header for mobile-->
+        <div class="hidden-md hidden-lg">
+            <div class="hmbr">
+                <!--  <img src="images/hamburger2.png" class="active"/>-->
+                <i class="fa  fa-lg fa-bars active" aria-hidden="true" style="display: block;
+    float: left;
+    margin-top: 20px;  color: #091233;"></i>
+                <img src="img/uni.png" width="120" class="pull-right">
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#">Benefits</a>
+                    </li>
+                    <li>
+                        <a href="#">Intro</a>
+                    </li>
+                    <li>
+                        <a href="#">Subscribe</a>
+                    </li>
+                    <li>
+                        <a href="#">Testimonials</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="hollow-btn">Register / Login</a>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+
+        </div>
+        <!--ends here-->
+        <div class="hidden-xs hidden-sm">
+            <nav class=" menu navbar navbar-default nav-custom2">
+                <div class="container-fluid">
+                    <!--
+                         header for desktop-->
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="img/uni.png" width="130" style="margin-top:-12px; transform: scale(.8);"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">About</a></li>
+                            <li>
+                                <a href="#">Benefits</a>
+                            </li>
+                            <li>
+                                <a href="#">Intro</a>
+                            </li>
+                            <li>
+                                <a href="#">Subscribe</a>
+                            </li>
+                            <li>
+                                <a href="#">Testimonials</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="hollow-btn">Register / Login</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>               <!--ends here-->
+
+
+            </nav>
+        </div>
+    </header>
+</div>
+<!-- newheader end-->
+<br>
+
+
 
 <section class="login-section img-section">
 
@@ -73,7 +166,7 @@
 
             </form>-->
 
-            <div class="search-card-oil" id="login-container">
+            <div class="search-card-oil login-width" id="login-container">
 
                 <div class="row" style="border-bottom: 1px solid #D9D9D9;">
                     <div class="col-md-12">
@@ -84,35 +177,35 @@
 
                 <div class="row">
                     <div class="col-xs-12">
-                        <label class="text-right text-muted" style="font-size: 12px;">Email:</label>
+                        <label class="label-class text-muted" style="font-size: 12px;">Email:</label>
 
 
                         <div class="form-group">
-                            <input type="email" class="form-control" />
+                            <input type="email" class="form-control input-login-fields" />
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-xs-12">
-                        <label class="text-right text-muted" style="font-size: 12px;">Password:</label>
+                        <label class="label-class text-muted" style="font-size: 12px;">Password:</label>
 
 
                         <div class="form-group">
-                            <input type="password" class="form-control"/>
+                            <input type="password" class="form-control input-login-fields"/>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 text-center">
                         <p>
-                            <a href="" class="m-10 oil-color4" >Forgot Password ?</a>
+                            <a href="" class="m-10 oil-color4 " >Forgot Password ?</a>
                         </p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 text-center">
                         <p>
-                            <a href="register.html" class="m-10 oil-color4">New User ? <span class="signup">&nbsp;Sign Up</span></a>
+                            <a href="register.html" class="m-10 oil-color4">New User ? <span class="signup">Sign Up</span></a>
                         </p>
                     </div>
                 </div>
@@ -122,7 +215,7 @@
 
                     <div class="filter-buttons text-center">
                         <div class="col-md-12 text-center">
-                            <button class="btn btn-default btn-lg filter-btn-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default login-btn btn-lg filter-btn-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Login
                             </button>
                         </div>
