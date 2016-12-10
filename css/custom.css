@@ -1182,7 +1182,7 @@ margin-bottom: 20px;
     border-radius: 0px;
     width: 100%;
     color: #fff;
-    background: rgba(235, 124, 8, 0.79);
+    background: #F19E49;
 
 }
 
@@ -1318,7 +1318,7 @@ margin-bottom: 20px;
 
 .login-form {
     height: 100vh;
-    padding: 140px 70px;
+    /*  padding: 140px 70px;*/
     color: #ffffff;
 
 }
@@ -1922,6 +1922,19 @@ css by garima-->*/
     background-color:#f3f3f3;
 }
 
+.Login-body{
+    background-color:#f3f3f3;
+    display: -webkit-flex;
+    display:  -moz-flex;
+    display:    flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+
 .nav>li>a {
     padding: 10px 12px;}
 
@@ -2434,6 +2447,7 @@ h5{
 
 }
 
+/*
 
 #oil-colo .row >input, input[type="email"] {
     height: 45px!important;
@@ -2442,9 +2456,17 @@ h5{
 }
 
 
-
 #oil-colo .row >input, input[type="password"] {
     height: 45px!important;
     border-radius: 0px;
 
 }
+*/
+
+
+.input-login-fields{
+    height: 45px!important;
+    border-radius: 0px;
+}
+
+
