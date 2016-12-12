@@ -12,11 +12,11 @@ body{
 
 
 .banner-image{
-    background: url("../img/download.jpg") center no-repeat ;
+    background: url("../img/download.png") center no-repeat ;
     width: 100%;
     background-size: cover;
-    height: 565px;
-position:relative;
+    height: 100vh;
+
     display: -webkit-flex;
     -webkit-justify-content: center;
     -moz-justify-content: center;
@@ -31,7 +31,53 @@ position:relative;
     
 }
 
-.banner-image::before{
+
+.scroll-down{
+ transform: translateY(-120%);
+    text-align: center;
+    display: block;
+
+}
+
+.scroll-bounce{
+    position :relative;
+   /* -webkit-animation: mymove 5s infinite; !* Safari 4.0 - 8.0 *!
+    animation: mymove 5s infinite;*/
+    -webkit-animation: chevron-anim 2s ease infinite;
+    -moz-animation: chevron-anim 2s ease infinite;
+    -o-animation: chevron-anim 2s ease infinite;
+    animation: chevron-anim 2s ease infinite;
+
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes chevron-anim {
+    0%   {top: 0px;}
+    75%  {top: 5px}
+    100% {top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes chevron-anim {
+    0%   {top: 0px;}
+    75%  {top: 5px}
+    100% {top: 0px;}
+}
+
+.scroll-bounce{
+
+}
+
+
+
+
+.scroll-down-btn{
+    border: 1px solid #fff;
+    padding:10px;
+}
+
+/*.banner-image::before{
  content: '';
     position: absolute;
     width: 100%;
@@ -40,7 +86,7 @@ position:relative;
     left: 0;
     right: 0;
 
-}
+}*/
 
 .banner-image .oil-heading{
     color: #fff;
