@@ -1424,7 +1424,7 @@ margin-bottom: 20px;
 }
 /*end of login page css*/
 #testimonials{
-    height:490px;
+    height:514px;
 }
 
 /*//////////////////////////////////////////////////////////////////////////
@@ -1743,7 +1743,7 @@ margin-bottom: 20px;
 
     .oil-para {
         margin-top:20px;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     /*  ends here*/
@@ -2108,6 +2108,27 @@ header.scroll {
     border-color: #ffffff!important;
 }
 
+
+.hollow-btn-mob{
+    border: 1px solid #fff;
+    cursor: pointer;
+    padding: 10px;
+    width: 140px;
+    border-radius: 30px;
+    background-color: transparent;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    line-height: 40px !important;
+}
+
+.hollow-btn-mob:hover{
+
+    background: #091233;
+    color:#ffffff ;
+
+}
+
 .hollow2-btn{
     color:#091233;
 }
@@ -2187,6 +2208,12 @@ header.scroll {
 .oil-btn-solid-search:hover{
     background-color:#EB7C08;
 }
+
+/*
+.iframe-vedio{
+    width:560px;
+    height:320px;
+}*/
 /*
 .claimed-btn {
     background: url("../img/three.png") right no-repeat;
@@ -2424,6 +2451,7 @@ h5{
 
     .navigation ul li a{
         color: #fff;
+        font-size: 16px;
     }
 
     .navigation span{
