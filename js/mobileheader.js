@@ -26,7 +26,7 @@ $(document).click(function(){
 });
 
 
-
+/*scroll down button on banner*/
 $('.scroll-down').click(function(event) {
     // Preventing default action of the event
     event.preventDefault();
@@ -37,3 +37,15 @@ $('.scroll-down').click(function(event) {
 //                                       |    --- duration (milliseconds)
 //                                       ---- distance from the top
 });
+
+
+/*scroll down button on banner end*/
+
+
+/*
+header and logo shrink on scroll*/
+
+
+
+/*
+ header and logo shrink on scroll end*/

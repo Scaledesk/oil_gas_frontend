@@ -19,4 +19,8 @@ function countUp(count)
     }, int_speed);
 }
 
-countUp(1209);
+// countUp(1209);
+
+$("#counters").mouseover(function () {
+    countUp(1209);
+})
