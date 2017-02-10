@@ -350,14 +350,7 @@ li .footer-link a{
     border: 1px solid #ffffff;
 
 }
-.oil-btn1{
-    background: #feee41;
-    color: #484848;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
-    padding:8px 15px !important;
-}
+
 
 .footer-subscribe-btn {
     background: rgba(235, 124, 8, 0.79);
@@ -379,14 +372,6 @@ li .footer-link a{
     color: #fff;
     font-size:14px;
 
-}
-.oil-btn2{
-    background: #feee41;
-    color: #484848;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    padding:14px 50px !important;
 }
 
 .search-control {
@@ -425,55 +410,16 @@ li .footer-link a{
     width:100%;
 }
 
-.oil-form-label{
-    float: left;
-    width: 160px;
-    padding-top: 5px;
-    text-align: right;
-    font-weight: 200;
-    color: #0B1632;
-}
-.input-group-addon {
-    font-family: 'Open Sans', sans-serif;
-    padding: 12px 30px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1;
-    color: #ffffff;
-  /*  background:#EB7C08!important;*/
-    background: rgba(235, 124, 8, 0.79)!important;
-    text-align: center;
-    border: 1px solid transparent;
-    border-radius: 0 !important;
-    cursor: pointer;
-    box-sizing: border-box;
-    overflow: hidden;
-
-}
 
 
-.oil-heading{
-    font-family: 'open sans', sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-}
-.oil-subheading{
-    font-family: 'open sans', sans-serif;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 4rem;
-    color: #ffffff;
-}
+
+
 .oil-footer{
     background: #0A0E29;
     color: #f7f7f7;
     padding: 100px 0;
 }
-.oil-title{
-    font-size: 35px;
-    color: #484848;
-    text-align: center;
-}
+
 .oil-lower-footer{
     background-color: rgba(12, 17, 37, 0.96);
 }
@@ -481,62 +427,9 @@ li .footer-link a{
 footer{
     margin: 0 0 0 0;
 }
-/*table*/
 
-.columns {
-    float: left;
-    width: 33.3%;
-    padding: 8px;
-}
 
-.price {
-    list-style-type: none;
-    border: 1px solid #eee;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
 
-.price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-
-.price . {
-    background-color: #ffffff;
-    color: #484848;
-    font-size: 25px;
-}
-
-.price li {
-    border-bottom: 1px solid #eee;
-    padding: 20px;
-    text-align: center;
-}
-
-.price .grey {
-    background-color: #eee;
-    font-size: 20px;
-}
-
-.button {
-    background-color: #feee41;
-    border: none;
-    color: #484848;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-}
-.yellow{
-    background: #feee41;
-}
-@media only screen and (max-width: 600px) {
-    .columns {
-        width: 100%;
-    }
-
-}
 @media (min-width: 300px) and (max-width: 550px) {
     .search-control{
         font-size: 14px !important;
@@ -568,22 +461,9 @@ footer{
 a {
     text-decoration: none;
 }
+
 a:hover{
     text-decoration: none;
-}
-.oil-box{
-    box-sizing: border-box;
-}
-.sub-title{
-    color: #484848;
-    font-weight: 500;
-    font-size: 25px;
-}
-.sub-title-center{
-    color: #484848;
-    font-weight: 600;
-    font-size: 40px;
-    text-align: center;
 }
 
 
@@ -1167,16 +1047,17 @@ margin-bottom: 20px;
 }
 
 .left-brandlogo {
-    border-right: 1px solid #D7D7D7;
-    /* width: 60px; */
     height: 175px;
-    padding-left: 0px;
-    padding-right: 5px;
-    padding-top: 70px;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
+
 .bookmark-style{
     text-align: right;
-    margin-top: -32px;
+    margin-top: -17px;
     font-size: 12px;
 }
 
@@ -1948,7 +1829,7 @@ css by garima-->*/
 }
 
 
-.searchresult-body{
+#search-result{
     background-color:#f3f3f3;
 }
 
@@ -2030,7 +1911,7 @@ header.scroll {
 }
 
 .oil-color3{
-    color:rgba(235, 124, 8, 0.79)!important;
+    color: #09b8f3!important;
     font-size: 20px;
 }
 
@@ -2531,10 +2412,10 @@ h5{
 
 .card{
     background-color: #fff;
-    overflow: hidden;
+    /*overflow: hidden;*/
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
     padding: 15px;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 
@@ -2595,7 +2476,7 @@ h5{
 
 
 .company-icons {
-    font-size: 14px;
+    font-size: 11px;
     margin-top: 10px;
 }
 
@@ -2631,6 +2512,7 @@ h5{
 
 .address-card p{
     font-size: 14px;
+    margin: 0;
 }
 
 
@@ -2743,7 +2625,7 @@ h5{
 
 
 .primary-btn{
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
     border-radius: 30px;
     border: none;
@@ -2755,8 +2637,9 @@ h5{
     padding: 5px 20px;
 }
 
+
 .primary-btn-filled{
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
     border-radius: 30px;
     border: none;
@@ -2770,8 +2653,21 @@ h5{
 }
 
 
+.primary-btn-filled , .primary-btn:focus{
+    outline: none;
+}
+
+
 .primary-c{
     color: #09b8f3;
 }
 
 
+
+.claimed{
+    border: 1px solid rgba(235, 124, 8, 0.79);
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: rgba(235, 124, 8, 0.79);
+    margin-left: 20px;
+}
