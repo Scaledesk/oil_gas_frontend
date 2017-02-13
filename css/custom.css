@@ -2590,6 +2590,17 @@ h5{
 }
 
 
+.info-card i.fa-phone{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 50%;
+    color: #4cae4c;
+}
+
+
 /*a[href=".pdf"]:before{*/
     /*content: "\f1c1 ";*/
     /*font-family: 'fontawesome', sans-serif;*/
@@ -2799,4 +2810,5 @@ h5{
     padding: 5px 10px;
     color: rgba(235, 124, 8, 0.79);
     margin-left: 20px;
+    font-size: 14px;
 }
