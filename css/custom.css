@@ -1440,6 +1440,10 @@ margin-bottom: 20px;
     }
 
     /*margin left*/
+    .m-l-10{
+        margin-left: 10px!important;
+    }
+
     .m-l-20{
         margin-left: 20px!important;
     }
@@ -1573,11 +1577,11 @@ margin-bottom: 20px;
 }
 
 .f-30{
-    font-size: 30px;
+    font-size: 30px!important;
 }
 
 .f-40{
-    font-size: 40px;
+    font-size: 40px!important;
 }
 
 .f-w{
@@ -1704,6 +1708,18 @@ margin-bottom: 20px;
 
 .c-black{
     color: #000!important;
+}
+
+.text-success{
+    color: #4cae4c!important;
+}
+
+.text-warning {
+    color: #FF9800!important;
+}
+
+.text-danger {
+    color: #F44336!important;
 }
 
 
@@ -2870,3 +2886,180 @@ h5{
     width: 150px;
     font-size: 20px;
 }
+
+
+/*//////////////////////////////Ends here////////////////////////*/
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                   New Menu For Dashboard
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.dashboard-header{
+    position: relative;
+    padding: 20px;
+    color: #999;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+    margin-top: -70px;
+    height: 80px;
+}
+
+
+.top-nav li{
+    float: left;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.user-nav li{
+    float: right;
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.nav-toggle{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    font-size: 25px !important;
+    cursor: pointer;
+}
+
+
+.side-nav{
+    margin-top: 40%;
+}
+
+
+.side-nav li{
+    text-align: left;
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+.main-navigation{
+    clear: both;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    max-width: 100%;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    z-index: 10;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.08);
+
+}
+
+.main-navigation.open{
+    transform: translateX(0);
+
+}
+
+.main-navigation.close-menu{
+    transform: translateX(0);
+
+}
+
+.main-navigation .nav-toggle{
+    right: -68%;
+    top: 3%;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                   Dashboard page CSS
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#dashboard{
+    background-color: #f7f7f7;
+}
+
+
+#dashboard .page-stats .page-views{
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #999;
+    margin: 0 auto;
+}
+
+
+#dashboard .message{
+    display: block;
+    color: #999;
+    min-height: 80px;
+    max-height: 170px;
+    overflow: hidden;
+
+}
+
+@media screen and (min-width: 789px) {
+    #dashboard .upcoming-events , .messages{
+        max-height: 800px;
+        min-height: 750px;
+        overflow-y: scroll;
+    }
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+    #dashboard .message{
+        text-align: left;
+
+    }
+
+}
+
+
+#dashboard .message .message-title{
+    font-weight: 700;
+    color: #696060;
+    margin-bottom: 0;
+    font-size: 18px;
+
+}
+
+
+#dashboard .message .message-body{
+    font-size: 16px;
+}
+
+
+
+#dashboard .events{
+    font-size: 14px;
+    padding: 10px;
+    min-height: 56px;
+    max-height: 142px;
+    overflow: hidden;
+}
+
+
+#dashboard .stock-price-strip{
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+     justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 60px;
+}
+
+
+
+

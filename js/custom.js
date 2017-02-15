@@ -122,12 +122,24 @@ jQuery(document).ready(function($){
     });
 
 
-    $("input[type ='text']").click(function(){
-        var $this = $(this);
-        $this.attr("placeholder", "");
-        $this.parent().find(".float-label").addClass("label-top");
+    //Dashboard navigation
 
+    $(function(){
+        $('.nav-toggle').on('click', function(){
+            $('.main-navigation').toggleClass('open');
+        });
     });
+
+    //
+    //$(function(){
+    //    $('body').click(function(){
+    //        $('.main-navigation').addClass('close-menu');
+    //    });
+    //});
+
+
+
+
 
 
 
