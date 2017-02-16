@@ -126,7 +126,7 @@ jQuery(document).ready(function($){
 
     $(function(){
         $('.nav-toggle').on('click', function(){
-            $('.main-navigation').toggleClass('open');
+            $('.wrapper').toggleClass('open');
         });
     });
 
