@@ -95,7 +95,7 @@ jQuery(document).ready(function($){
 
     $(function(){
         $('.nav-toggle').on('click', function(){
-            $('.wrapper').toggleClass('open');
+            $('.main-navigation').toggleClass('open');
         });
     });
 

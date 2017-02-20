@@ -1528,6 +1528,10 @@ margin-bottom: 20px;
         padding: 40px 0;
     }
 
+    .p-r-30{
+        padding-right: 30px!important;
+    }
+
 
     .padding-right{
         padding-right: 5%!important;
@@ -2657,6 +2661,7 @@ h5{
 .company-title-subtile{
     margin: 15px 0;
     font-weight: bolder;
+    font-size: 18px;
 }
 
 
@@ -2813,7 +2818,7 @@ h5{
     line-height: 30px;
     text-align: center;
     border-radius: 30px;
-    border: none;
+    border: 1px solid #4ee0e3;
     color: #4ee0e3;
     background-color: #fff;
     margin: 10px 0;
@@ -2922,13 +2927,14 @@ h5{
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .dashboard-header{
-    position: relative;
-    /* padding: 20px; */
+    position: fixed;
     color: #999;
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
     margin-top: -90px;
-    height: 75px;
+    height: 90px;
+    width: 100%;
+    z-index: 10;
 }
 
 
@@ -2944,14 +2950,14 @@ h5{
 
 
 .top-nav li:nth-child(1) i{
-    padding: 21px 30px;
+    padding: 33px 30px 25px 30px;
     background: #33c0cd;
     color: #fff;
     font-size: 18px;
 }
 
 .top-nav li:nth-child(2) a{
-    padding: 21px;
+    padding: 40px 30px 26px 30px;
     background: #4ee0e3;
     color: #fff;
     font-size: 18px;
@@ -2988,30 +2994,32 @@ h5{
 .main-navigation{
     clear: both;
     position: fixed;
-    top: 0;
+    top: 67px;
     left: 0;
-    width: 20vw;
+    width: 17.5vw;
     max-width: 100%;
     height: 100%;
     background-color: #fff;
     text-align: center;
-    transform: translateX(-100%);
+    transform: translateX(0%);
     z-index: 10;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,.08);
     overflow-x: hidden;
+    transition: transform 0.6s ease;
+
 
 }
 
 .main-navigation.open{
-    transform: translateX(0);
+    transform: translateX(-64%);
 }
 
 
-.wrapper{
-    transform: translateX(0%);
-    transition: transform 0.6s ease;
-    position: relative;
-}
+/*.wrapper{*/
+    /*transform: translateX(20%);*/
+    /*transition: transform 0.6s ease;*/
+    /*position: relative;*/
+/*}*/
 
 @media screen and (max-width: 600px) {
     .main-navigation{
@@ -3023,19 +3031,19 @@ h5{
     }
 }
 
-.wrapper.open{
-    transform: translateX(20%);
-}
+/*.wrapper.open{*/
+    /*transform: translateX(20%);*/
+/*}*/
 
-.main-navigation.close-menu{
-    transform: translateX(0);
+/*.main-navigation.close-menu{*/
+    /*transform: translateX(0);*/
 
-}
+/*}*/
 
-.main-navigation .nav-toggle{
-    right: -68%;
-    top: 3%;
-}
+/*.main-navigation .nav-toggle{*/
+    /*right: -68%;*/
+    /*top: 3%;*/
+/*}*/
 
 
 /*////////Use nav////////////*/
@@ -3188,9 +3196,10 @@ h5{
     border-radius: 30px;
     border: 1px solid #eee;
     margin: 5px;
-    width: 165px;
+    width: 149px;
     height: 50px;
     background: #fff;
+    font-size: 14px;
 }
 
 
@@ -3214,6 +3223,8 @@ h5{
 .wizard {
     margin: 10px auto;
     background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23), inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+    /*width: 70%;*/
 }
 
 .wizard .nav-tabs {
@@ -3265,11 +3276,11 @@ span.round-tab i{
 }
 .wizard li.active span.round-tab {
     background: #fff;
-    border: 2px solid #5bc0de;
+    border: 2px solid #4ee0e3;
 
 }
 .wizard li.active span.round-tab i{
-    color: #5bc0de;
+    color: #4ee0e3;
 }
 
 span.round-tab:hover {
@@ -3278,7 +3289,7 @@ span.round-tab:hover {
 }
 
 .wizard .nav-tabs > li {
-    width: 14%;
+    width: 25%;
 }
 
 .wizard li:after {
@@ -3289,7 +3300,7 @@ span.round-tab:hover {
     margin: 0 auto;
     bottom: 0px;
     border: 5px solid transparent;
-    border-bottom-color: #5bc0de;
+    border-bottom-color: #4ee0e3;
     transition: 0.1s ease-in-out;
 }
 
@@ -3301,7 +3312,7 @@ span.round-tab:hover {
     margin: 0 auto;
     bottom: 0px;
     border: 10px solid transparent;
-    border-bottom-color: #5bc0de;
+    border-bottom-color: #4ee0e3;
 }
 
 .wizard .nav-tabs > li a {
@@ -3350,7 +3361,63 @@ span.round-tab:hover {
         position: absolute;
         left: 35%;
     }
+
+
+
+
 }
+
+
+#dashboard-form .form-container .form-group > input{
+    box-shadow: none;
+    border: 1px solid #eee;
+    height: 50px;
+}
+
+#dashboard-form .form-container .form-group > textarea{
+    box-shadow: none;
+    border: 1px solid #eee;
+}
+
+#dashboard-form .form-container .form-group > select{
+    box-shadow: none;
+    border: 1px solid #eee;
+    height: 50px;
+
+}
+
+#dashboard-form .form-container .form-group > label{
+    font-size: 14px;
+}
+
+#dashboard-form .form-container .form-group > input{
+    position: relative;
+}
+
+#dashboard-form .form-container .form-group  > .input-icon{
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    font-size: 20px;
+}
+
+#dashboard-form .form-container .form-group  > input:focus + .input-icon i  {
+    color: tomato;
+}
+
+
+
+#dashboard-form .form-preview{
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                                    dashboard-tender-requests
