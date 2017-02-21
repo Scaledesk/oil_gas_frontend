@@ -158,9 +158,9 @@
             <div class="col-md-10 col-md-offset-2">
 
                 <div class="row">
-                    <div class="col-md-8 form-content">
+                    <div class="col-md-8 form-content p-0">
                         <div class="wizard">
-                            <div class="wizard-inner">
+                            <div class="wizard-inner" hidden>
                                 <div class="connecting-line"></div>
                                 <ul class="nav nav-tabs" role="tablist">
 
@@ -202,6 +202,24 @@
 
 
 
+                                    <li role="presentation" class="disabled">
+                                        <a href="#step5" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                                        <span class="round-tab">
+                                            <i class="glyphicon glyphicon-ok"></i>
+                                        </span>
+                                        </a>
+                                    </li>
+
+                                    <li role="presentation" class="disabled">
+                                        <a href="#step6" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                                        <span class="round-tab">
+                                            <i class="glyphicon glyphicon-ok"></i>
+                                        </span>
+                                        </a>
+                                    </li>
+
+
+
 
                                 </ul>
                             </div>
@@ -215,7 +233,7 @@
         ////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
                                     <div class="tab-pane active" role="tabpanel" id="step1">
-                                        <div class="form-container p-30">
+                                        <div class="form-container p-30 p-b-0">
 
                                             <form action="">
                                                 <!--Company Name-->
@@ -268,10 +286,21 @@
 
                                                 </div>
 
-
-
-                                                <!--Company Website link and Phone number-->
+                                                <!--Company Fax number and contact number-->
                                                 <div class="row m-b-10">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="fax number">Company  Fax  <i class="fa fa-info-circle f-16" data-toggle="tooltip" data-placement="right"  title="Add Text here"></i></label>
+
+                                                            <input type="number" class="form-control" placeholder="http://" />
+
+                                                            <span class="input-icon"><i class="fa fa-fax"></i></span>
+
+
+                                                        </div>
+
+                                                    </div>
+
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="Contact Number">Contact Number  <i class="fa fa-info-circle f-16" data-toggle="tooltip" data-placement="right"  title="Add Text here"></i></label>
@@ -286,7 +315,13 @@
 
                                                     </div>
 
-                                                    <div class="col-md-6">
+
+                                                </div>
+
+                                                <!--Company Website link-->
+                                                <div class="row m-b-10">
+
+                                                    <div class="col-md-12">
                                                         <div class="form-group">
                                                             <label for="Website url">Website Link <i class="fa fa-info-circle f-16" data-toggle="tooltip" data-placement="right"  title="Add Text here"></i></label>
 
@@ -302,6 +337,53 @@
 
 
                                                 </div>
+
+                                            </form>
+
+
+                                        </div>
+
+
+
+                                        <ul class="list-inline pull-right p-r-30">
+                                            <li><button type="button" class="primary-btn-filled next-step">Save and continue <i class="fa fa-angle-right"></i></button></li>
+                                        </ul>
+
+                                        <!--////////Step 1 form content ends here/////////////--->
+
+                                    </div>  <!--tab-pane class ends here-->
+
+                                    <!--////////Step 1 form content ends here/////////////--->
+
+
+                                    <!--////////////////////////////////////////////////////////////////////////////////////////////////////
+                                              Step 2 form content starts here
+        ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                                    <div class="tab-pane" role="tabpanel" id="step2">
+
+                                        <div class="form-container p-30 p-b-0">
+
+                                            <form action="">
+
+                                                <!--Company Description-->
+                                                <div class="row m-b-10">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="company Description">Company Description  <i class="fa fa-info-circle f-16" data-toggle="tooltip" data-placement="right"  title="Add Text here"></i></label>
+
+                                                                    <textarea name="company address" id="" cols="30"
+                                                                              rows="3" placeholder="Type your Description here" class="form-control" style="resize: vertical; max-height: 100px; overflow-y: scroll;"></textarea>
+
+                                                            <!--Error Message Display Here-->
+                                                            <small class="text-danger hidden" >* Invalid Input</small>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
 
 
                                                 <!--Company Logo and Broucher-->
@@ -335,55 +417,6 @@
                                                 </div>
 
 
-                                                <!--Company Description-->
-                                                <div class="row m-b-10">
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label for="company Description">Company Description  <i class="fa fa-info-circle f-16" data-toggle="tooltip" data-placement="right"  title="Add Text here"></i></label>
-
-                                                                    <textarea name="company address" id="" cols="30"
-                                                                              rows="5" placeholder="Type your Description here" class="form-control" style="resize: vertical;"></textarea>
-
-                                                            <!--Error Message Display Here-->
-                                                            <small class="text-danger hidden" >* Invalid Input</small>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-
-
-                                            </form>
-
-
-                                        </div>
-
-
-
-                                        <ul class="list-inline pull-right p-r-30">
-                                            <li><button type="button" class="primary-btn-filled next-step">Save and continue <i class="fa fa-angle-right"></i></button></li>
-                                        </ul>
-
-                                        <!--////////Step 1 form content ends here/////////////--->
-
-                                    </div>  <!--tab-pane class ends here-->
-
-
-
-
-
-
-                                    <!--////////////////////////////////////////////////////////////////////////////////////////////////////
-                                              Step 2 form content starts here
-        ////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-                                    <div class="tab-pane" role="tabpanel" id="step2">
-
-                                        <div class="form-container p-30">
-
-                                            <form action="">
                                                 <!--Company year of Incorporation-->
                                                 <div class="row m-b-10">
                                                     <div class="col-md-6">
@@ -433,6 +466,7 @@
 
                                                 </div>
 
+                                                <!--Company Employee and Incorporation-->
                                                 <div class="row m-b-10">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
@@ -479,124 +513,44 @@
                                                 </div>
 
 
-                                                <!--Company Other address-->
-                                                <div class="address-div-repeat bg p-10">
-                                                    <div class="row m-b-10">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="Company location">Company Location</label>
-                                                                <input type="text" class="form-control" placeholder="Contact Person" />
-                                                                <span class="input-icon"><i class="fa fa-user-o"></i></span>
-
-                                                                <!--Error Message Display Here-->
-                                                                <small class="text-danger hidden" >* Invalid Input</small>
 
 
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="Company location">Company Phone </label>
-                                                                <input type="number" class="form-control" placeholder="Phone " />
-                                                                <span class="input-icon"><i class="fa fa-phone"></i></span>
-
-                                                                <!--Error Message Display Here-->
-                                                                <small class="text-danger hidden" >* Invalid Input</small>
 
 
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row m-b-10">
-
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label for="Company location">Company Email</label>
-                                                                <input type="email" class="form-control" placeholder="Company email" />
-
-                                                                <span class="input-icon"><i id="my" class="fa fa-envelope-o"></i></span>
-
-                                                                <!--Error Message Display Here-->
-                                                                <small class="text-danger hidden" >* Invalid Input</small>
+                                            </form>
+                                        </div>
 
 
-                                                            </div>
-                                                        </div>
+
+                                        <ul class="list-inline pull-right p-r-30">
+                                            <li><button type="button" class="primary-btn prev-step"><i class="fa fa-angle-left"></i> Previous </button></li>
+
+                                            <li><button type="button" class="primary-btn-filled next-step">Save and continue <i class="fa fa-angle-right"></i></button></li>
+                                        </ul>
 
 
-                                                    </div>
-
-                                                </div><!--End Company Other address-->
-
-                                                <!--Company Other address-->
-                                                <div class="address-div-repeat bg p-10">
-                                                    <h3>Address 2</h3>
-                                                    <hr class="m-t-5 ">
-                                                    <div class="row m-b-10">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="Company location">Company Location</label>
-                                                                <input type="text" class="form-control" placeholder="Contact Person" />
-                                                                <span class="input-icon"><i class="fa fa-user-o"></i></span>
-
-                                                                <!--Error Message Display Here-->
-                                                                <small class="text-danger hidden" >* Invalid Input</small>
 
 
-                                                            </div>
-                                                        </div>
+                                    </div> <!--tab-pane class ends here-->
 
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="Company location">Company Phone </label>
-                                                                <input type="number" class="form-control" placeholder="Phone " />
-                                                                <span class="input-icon"><i class="fa fa-phone"></i></span>
-
-                                                                <!--Error Message Display Here-->
-                                                                <small class="text-danger hidden" >* Invalid Input</small>
+                                    <!--////////Step 2 form content ends here/////////////--->
 
 
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row m-b-10">
-
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label for="Company location">Company Email</label>
-                                                                <input type="email" class="form-control" placeholder="Company email" />
-
-                                                                <span class="input-icon"><i id="my" class="fa fa-envelope-o"></i></span>
-
-                                                                <!--Error Message Display Here-->
-                                                                <small class="text-danger hidden" >* Invalid Input</small>
 
 
-                                                            </div>
-                                                        </div>
+                                    <!--////////////////////////////////////////////////////////////////////////////////////////////////////
+                                              Step 3 form content starts here
+        ////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-
-                                                    </div>
-
-                                                </div><!--End Company Other address-->
-
-                                                <!--Click more to add address-->
-                                                <div class="row m-b-10">
-                                                    <div class="col-xs-12">
-                                                        <p><a href="">Add More <i class="fa fa-plus"></i></a></p>
-                                                    </div>
-                                                </div>
+                                    <div class="tab-pane" role="tabpanel" id="step3">
+                                        <div class="form-container p-30 p-b-0">
+                                            <form action="">
 
 
                                                 <!--Company Social link address-->
                                                 <div class="row m-b-10">
                                                     <div class="col-md-6">
-                                                        <div class="form-group">
+                                                        <div class="form-group m-b-0">
                                                             <label for="company-Social-link">Facebook Link  <i class="fa fa-info-circle f-16" data-toggle="tooltip" data-placement="right"  title="Add Text here"></i></label>
 
                                                             <input type="url" class="form-control" placeholder="http://" />
@@ -607,7 +561,7 @@
                                                     </div>
 
                                                     <div class="col-md-6">
-                                                        <div class="form-group">
+                                                        <div class="form-group m-b-0">
                                                             <label for="company-Social-link">Google Link  <i class="fa fa-info-circle f-16" data-toggle="tooltip" data-placement="right"  title="Add Text here"></i></label>
 
                                                             <input type="url" class="form-control" placeholder="http://" />
@@ -618,8 +572,8 @@
 
                                                 </div>
 
-
-                                                <div class="row m-b-10">
+                                                <!--Show this row if user click add more link-->
+                                                <div class="row m-b-10 ">
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
@@ -645,7 +599,74 @@
                                                 </div>
 
 
+                                                <!--Company Other address-->
+                                                <div class="address-div-repeat">
+                                                    <div class="row m-b-10">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="Company location">Company Location</label>
+                                                                <input type="text" class="form-control" placeholder="Contact Person" />
+                                                                <span class="input-icon"><i class="fa fa-user-o"></i></span>
+
+                                                                <!--Error Message Display Here-->
+                                                                <small class="text-danger hidden" >* Invalid Input</small>
+
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="Company location">Company Phone </label>
+                                                                <input type="number" class="form-control" placeholder="Phone " />
+                                                                <span class="input-icon"><i class="fa fa-phone"></i></span>
+
+                                                                <!--Error Message Display Here-->
+                                                                <small class="text-danger hidden" >* Invalid Input</small>
+
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row m-b-10">
+
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="Company location">Company Email</label>
+                                                                <input type="email" class="form-control" placeholder="Company email" />
+
+                                                                <span class="input-icon"><i id="my" class="fa fa-envelope-o"></i></span>
+
+                                                                <!--Error Message Display Here-->
+                                                                <small class="text-danger hidden" >* Invalid Input</small>
+
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div><!--End Company Other address-->
+
+
+
+                                                <!--Click more to add address-->
+                                                <div class="row ">
+                                                    <div class="col-xs-12">
+                                                        <p><a href="">Add More Address <i class="fa fa-plus"></i></a></p>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+
                                             </form>
+
                                         </div>
 
 
@@ -661,58 +682,18 @@
 
                                     </div> <!--tab-pane class ends here-->
 
-                                    <!--////////Step 2 form content ends here/////////////--->
+                                    <!--////////Step 3 form content ends here/////////////--->
+
 
 
                                     <!--////////////////////////////////////////////////////////////////////////////////////////////////////
-                                              Step 3 form content starts here
+                                              Step 4 form content starts here
         ////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-                                    <div class="tab-pane" role="tabpanel" id="step3">
+                                    <div class="tab-pane" role="tabpanel" id="step4">
                                         <div class="form-container p-30">
+
                                             <form action="">
-
-                                                <!--Repeat (add-product) class for ad more product-->
-                                                <div class="add-product">
-
-                                                    <!--Company product name-->
-                                                    <div class="row m-b-10 ">
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label for="Product name">Product Name</label>
-                                                                <input type="text" class="form-control" placeholder="Product Name" />
-                                                                <span class="input-icon"><i class="fa fa-globe"></i></span>
-                                                            </div>
-                                                        </div>
-
-
-
-
-                                                    </div>
-
-                                                    <!--Company product Image-->
-                                                    <div class="row">
-                                                        <div class="col-md-12 text-center">
-                                                            <h3 class="m-b-20">Product Image</h3>
-                                                            <img src="img/drag-drop-file.gif" alt="" >
-                                                        </div>
-
-
-
-
-                                                    </div>
-
-                                                </div>
-
-
-
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <p><a href="">Add More</a></p>
-                                                    </div>
-                                                </div>
-
-
 
                                                 <!--Company Service name and certificate-->
                                                 <div class="row m-b-10">
@@ -736,13 +717,41 @@
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="Certification" class="">Certification</label>
+                                                            <label for="Certification" class="">Service Image</label>
                                                             <input type="file" class="form-control" />
                                                             <span class="input-icon"><i class="fa fa-file-pdf-o"></i></span>
 
                                                         </div>
                                                     </div>
 
+
+
+                                                </div>
+
+
+                                                <!--Company product Gallery Image-->
+                                                <div class="row m-b-10  ">
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="Product description">Service Description <i class="fa fa-info-circle f-16" data-toggle="tooltip" data-placement="right"  title="Add Text here"></i></label>
+
+                                                                    <textarea name="company address" id="" cols="30"
+                                                                              rows="3" placeholder="Type your Description here" class="form-control" style="resize: vertical;"></textarea>
+                                                            <!--Error Message Display Here-->
+                                                            <small class="text-danger hidden" >* Invalid Input</small>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="Certification" class="">Certification</label>
+                                                            <input type="file" class="form-control" />
+                                                            <span class="input-icon"><i class="fa fa-file-pdf-o"></i></span>
+
+                                                        </div>
+                                                    </div>
 
 
                                                 </div>
@@ -772,14 +781,6 @@
 
                                                 <!--Annual Sales volume-->
                                                 <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="Sales report">Annual Sales</label>
-                                                            <input type="text" class="form-control" placeholder="Type Here" />
-                                                            <span class="input-icon"><i class="fa fa-bar-chart"></i></span>
-
-                                                        </div>
-                                                    </div>
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
@@ -798,7 +799,19 @@
                                                         </div>
                                                     </div>
 
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="Sales report">Annual Sales</label>
+                                                            <input type="text" class="form-control" placeholder="Type Here" />
+                                                            <span class="input-icon"><i class="fa fa-bar-chart"></i></span>
+
+                                                        </div>
+                                                    </div>
+
+
                                                 </div>
+
+
 
 
                                             </form>
@@ -809,7 +822,6 @@
 
                                         <ul class="list-inline pull-right p-r-30">
                                             <li><button type="button" class="primary-btn prev-step"><i class="fa fa-angle-left"></i> Previous </button></li>
-
                                             <li><button type="button" class="primary-btn-filled next-step">Save and continue <i class="fa fa-angle-right"></i></button></li>
                                         </ul>
 
@@ -818,22 +830,26 @@
 
                                     </div> <!--tab-pane class ends here-->
 
-                                    <!--////////Step 3 form content ends here/////////////--->
+                                    <!--////////Step 4 form content ends here/////////////--->
+
+
 
                                     <!--////////////////////////////////////////////////////////////////////////////////////////////////////
-                                              Step 4 form content starts here
-        ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                         Step 5 form content starts here
+////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-                                    <div class="tab-pane" role="tabpanel" id="step4">
+                                    <div class="tab-pane" role="tabpanel" id="step5">
                                         <div class="form-container p-30">
 
                                             <form action="">
 
-                                                <!--Company product Gallery Image-->
-                                                <div class="row m-t-60 m-b-10">
+                                                <!--Company Service name and certificate-->
+                                                <div class="row m-b-10">
                                                     <div class="col-md-12 text-center">
-                                                        <h3 class="text-center m-b-20">Add image for Gallery</h3>
-                                                        <img src="img/drag-drop-file.gif" alt="" >
+                                                        <div class="form-group">
+                                                            <h3 class="m-b-60">Add Images for Media Gallery</h3>
+                                                            <img src="img/drag-drop-file.gif" alt="">
+                                                        </div>
                                                     </div>
 
 
@@ -842,6 +858,94 @@
 
 
 
+                                            </form>
+
+                                        </div>
+
+
+
+                                        <ul class="list-inline pull-right p-r-30">
+                                            <li><button type="button" class="primary-btn prev-step"><i class="fa fa-angle-left"></i> Previous </button></li>
+                                            <li><button type="button" class="primary-btn-filled next-step">Save and continue <i class="fa fa-angle-right"></i></button></li>
+                                        </ul>
+
+
+
+
+                                    </div> <!--tab-pane class ends here-->
+
+                                    <!--////////Step 5 form content ends here/////////////--->
+
+
+                                    <!--////////////////////////////////////////////////////////////////////////////////////////////////////
+                                        Step 6 form content starts here
+////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                                    <div class="tab-pane" role="tabpanel" id="step6">
+                                        <div class="form-container p-30">
+
+                                            <form action="">
+
+                                                <!--Repeat (add-product) class for ad more product-->
+                                                <div class="add-product">
+
+                                                    <!--Company product name-->
+                                                    <div class="row  ">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="Product name">Product Name</label>
+                                                                <input type="text" class="form-control" placeholder="Product Name" />
+                                                                <span class="input-icon"><i class="fa fa-globe"></i></span>
+                                                            </div>
+
+
+
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="">Upload Product Image</label>
+                                                                <input type="file" placeholder="Product image" class="form-control" />
+
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                    </div>
+
+                                                    <!--Company product Image-->
+                                                    <div class="row">
+                                                        <div class="col-md-12 ">
+                                                            <div class="form-group">
+                                                                <label for="Product description">Product Description <i class="fa fa-info-circle f-16" data-toggle="tooltip" data-placement="right"  title="Add Text here"></i></label>
+
+                                                                    <textarea name="company address" id="" cols="30"
+                                                                              rows="3" placeholder="Type your Description here" class="form-control" style="resize: vertical;"></textarea>
+                                                                <!--Error Message Display Here-->
+                                                                <small class="text-danger hidden" >* Invalid Input</small>
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+
+                                                    </div>
+
+                                                </div>
+
+
+
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <p><a href="">Add More</a></p>
+                                                    </div>
+                                                </div>
+
+
 
                                             </form>
 
@@ -859,7 +963,8 @@
 
                                     </div> <!--tab-pane class ends here-->
 
-                                    <!--////////Step 3 form content ends here/////////////--->
+                                    <!--////////Step 6 form content ends here/////////////--->
+
 
 
 
@@ -869,9 +974,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 p-0">
                         <div class="card form-preview">
-                            <img src="img/graph2.png" alt="" class="img-responsive">
+                            <img src="img/Infographic%20-%203-01.png" alt="" class="img-responsive">
 
                         </div>
 
@@ -892,86 +997,87 @@
 
 <div class="card p-30 m-0">
 
-</div>
+
+    </div>
 
 
 
 
-<!------------------------------Search  Modal------------------------------>
+    <!------------------------------Search  Modal------------------------------>
 
-<div class="modal search-bar animated fadeIn" id="search-bar" tabindex="-1" role="dialog" aria-labelledby="search-bar">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content ">
-            <div class="modal-header border-0">
-                <button type="button" class="close f-40" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <!--<h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
-            </div>
+    <div class="modal search-bar animated fadeIn" id="search-bar" tabindex="-1" role="dialog" aria-labelledby="search-bar">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content ">
+                <div class="modal-header border-0">
+                    <button type="button" class="close f-40" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!--<h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+                </div>
 
-            <div class="modal-body wow slideInUp">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="input-group">
-                                <input type="text" class="form-control f-40" placeholder="Type here">
+                <div class="modal-body wow slideInUp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control f-40" placeholder="Type here">
                                     <span class="input-group-btn">
                                         <button class="btn btn-default footer-subscribe-btn" type="button">Search</button>
                                 </span>
 
+                                </div>
+
                             </div>
-
                         </div>
-                    </div>
 
 
-                    <div class="row m-t-60">
-                        <div class="col-xs-12 text-center ">
-                            <h2 class="m-b-60">Popular Searches</h2>
-                            <button>Delhi</button>
-                            <button>Mumbai</button>
+                        <div class="row m-t-60">
+                            <div class="col-xs-12 text-center ">
+                                <h2 class="m-b-60">Popular Searches</h2>
+                                <button>Delhi</button>
+                                <button>Mumbai</button>
 
-                            <button>Jaipur</button>
+                                <button>Jaipur</button>
 
-                            <button>kanpur</button>
-                            <button>Chennai</button>
-                            <button>Banglore</button>
-                            <button>Patna</button>
+                                <button>kanpur</button>
+                                <button>Chennai</button>
+                                <button>Banglore</button>
+                                <button>Patna</button>
 
+                            </div>
                         </div>
-                    </div>
 
+
+                    </div>
 
                 </div>
-
+                <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                <!--</div>-->
             </div>
-            <!--<div class="modal-footer">-->
-            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-            <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-            <!--</div>-->
         </div>
     </div>
-</div>
 
-<!--Search modal ends here--->
+    <!--Search modal ends here--->
 
-<!--</div>-->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/counter.js"></script>
-<script src="js/header.js"></script>
-<script src="js/mobileheader.js"></script>
+    <!--</div>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/mobileheader.js"></script>
 
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
-
-
-<script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-
-    new WOW().init();
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
 
 
-</script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        new WOW().init();
+
+
+    </script>
 
 
 

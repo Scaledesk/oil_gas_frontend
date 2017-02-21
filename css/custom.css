@@ -1501,6 +1501,9 @@ margin-bottom: 20px;
     padding-top: 10px!important;
 
 }
+    .p-b-0{
+        padding-bottom: 0!important;
+    }
 
     .p-b-10{
         padding-bottom: 10px!important;
@@ -2823,7 +2826,7 @@ h5{
     background-color: #fff;
     margin: 10px 0;
     max-width: 100%;
-    min-width: 150px;
+    min-width: 130px;
     padding: 5px 20px;
     transition: opacity .4s ease-in-out;
 }
@@ -2838,7 +2841,7 @@ h5{
     background-color: #4ee0e3;
     margin: 10px 0;
     max-width: 100%;
-    min-width: 150px;
+    min-width: 130px;
     padding: 5px 20px;
     transition: opacity .4s ease-in-out;
 
@@ -3224,8 +3227,11 @@ h5{
     margin: 10px auto;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23), inset 1px 1px 0 0 hsla(0,0%,100%,.2);
-    /*width: 70%;*/
+    min-height: 560px;
+    max-height: 561px;
+    overflow-y: scroll;
 }
+
 
 .wizard .nav-tabs {
     position: relative;
@@ -3329,7 +3335,7 @@ span.round-tab:hover {
 
 .wizard .tab-pane {
     position: relative;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
 }
 
 .wizard h3 {
@@ -3382,7 +3388,7 @@ span.round-tab:hover {
 #dashboard-form .form-container .form-group > select{
     box-shadow: none;
     border: 1px solid #eee;
-    height: 50px;
+    height: 40px;
 
 }
 
@@ -3409,12 +3415,16 @@ span.round-tab:hover {
 
 #dashboard-form .form-preview{
     width: 100%;
-    height: 100%;
     display: -webkit-flex;
     -webkit-justify-content: center;
             justify-content: center;
     -webkit-align-items: center;
             align-items: center;
+    margin-top: 10px;
+    height: 560px;
+    margin-left: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23), inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+
 }
 
 
