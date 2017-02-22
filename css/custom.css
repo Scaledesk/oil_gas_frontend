@@ -1622,6 +1622,9 @@ margin-bottom: 20px;
 .border-0{
     border: none!important;
 }
+.border-bottom-0{
+    border-bottom: 0!important;
+}
 
 .w-400{
     font-weight: 400;
@@ -3449,3 +3452,156 @@ span.round-tab:hover {
     }
 }
 
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                   Register
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#register .right , .left{
+    height: 100vh;
+    display: -webkit-flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+#register  .left{
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 600px) {
+    #register  .right .login-container > img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #register  .right .login-container {
+        text-align: center;
+    }
+}
+
+
+
+
+#register .login-container{
+    width: 100%;
+}
+
+
+#register .left{
+    background-color: antiquewhite;
+    z-index: 1;
+}
+
+#register .right{
+    background-color: #353342;
+}
+
+#register .login-container .form-group input{
+    height: 60px;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+    border: 2px solid #3d4051;
+    padding: 0 50px;
+    color: #fff;
+}
+
+@media screen and (max-width: 769px) {
+    #register .login-container .form-group button{
+        margin-left: 25px !important;
+        display: block;
+        margin: 25px auto !important;
+
+    }
+}
+
+#register .login-container .form-group button{
+    max-width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #f1615e;
+    background: transparent;
+    color: #f1615e;
+    z-index: 0;
+    position: relative;
+    min-width: 170px;
+    width: 100%;
+    margin-left: -25px;
+}
+
+#register .login-container .form-group button:focus {
+    outline: none;
+}
+
+
+
+#register .login-container .form-group p a{
+    color: #717580;
+    line-height: 50px;
+
+}
+
+#register .login-container .form-title{
+    color: #a8abb0;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: x-large;
+    font-weight: 100;
+    margin-top: 40px;
+}
+
+#register .login-container .form-group {
+    position: relative;
+
+}
+
+#register .login-container .form-group  > .input-icon{
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    font-size: 12px;
+    color: #f1615e;
+}
+
+#register .login-container .nav-tabs {
+    border: none;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+
+#register .login-container .nav-tabs li{
+    display: inline-block;
+    text-align: center;
+    float: none;
+}
+
+#register  .login-container .nav > li > a  {
+    padding: 10px 70px;
+    color: #a8abb0;
+}
+
+
+#register  .login-container .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #a8abb0;
+    cursor: pointer;
+    border: 1px solid #a6a9ae;
+    background-color: transparent;
+}
+
+
+#register .login-container .nav>li>a:focus, .nav>li>a:hover{
+    background-color: transparent;
+}

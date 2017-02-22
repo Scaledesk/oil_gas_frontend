@@ -1,336 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Oil & Gas</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <script src="https://use.fontawesome.com/418c680b48.js"></script>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>Energy Dais</title>
+    <meta name="description" content="Energy Dais - Introduction" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Scaledesk Web Studio" />
+    <link rel="shortcut icon" href="img/favicon/favicon.png">
+
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/favicon-retina-ipad.png">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon-retina-iphone.png">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon-standard-ipad.png">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon-standard-iphone.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://overpass-30e2.kxcdn.com/overpass.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">-->
+
+
+    <!-- font-family: 'Trirong', s
+
+
+
+    erif;
+ font-family: 'Yrsa', serif;
+ font-family: 'Slabo 27px', serif;
+ font-family: 'Droid Serif', serif;-->
+
+
     <script src="js/jquery.js"></script>
-    <script src="js/custom.js"></script>
-    <!--<style>-->
-    <!--html, body {-->
-    <!--height: 100%;-->
-    <!--font-family: 'Open Sans', sans-serif;-->
-    <!--}-->
-    <!--</style>-->
+    <script src="https://use.fontawesome.com/e4667d49ab.js"></script>
+
+    <link rel="stylesheet" href="css/animate.css">
+
+
+    <link href="css/custom.css" rel="stylesheet">
+
+
+    <style>
+        body{
+            padding-top: 0!important;
+        }
+    </style>
 
 
 </head>
+
+<!--testing scroll header-->
+
 <body>
 
+<!--loader-->
+<script type="text/javascript">
+    $(document).ready(function() {
 
-<!--newheader Start-->
-<div>
-    <header>
-        <!--header for mobile-->
-        <div class="hidden-md hidden-lg">
-            <div class="hmbr">
-                <!--  <img src="images/hamburger2.png" class="active"/>-->
-                <i class="fa  fa-lg fa-bars active" aria-hidden="true" style="display: block;
-    float: left;
-    margin-top: 20px;  color: #091233;"></i>
-                <img src="img/uni.png" width="120" class="pull-right">
-            </div>
-            <div class="navigation">
-                <ul>
-                    <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">About</a></li>
-                    <li>
-                        <a href="#">Benefits</a>
-                    </li>
-                    <li>
-                        <a href="#">Intro</a>
-                    </li>
-                    <li>
-                        <a href="#">Subscribe</a>
-                    </li>
-                    <li>
-                        <a href="#">Testimonials</a>
-                    </li>
+        setTimeout(function(){
+            $('body').addClass('loaded');
+            $('h1').css('color','#222222');
+        }, 500);
 
-                    <li>
-                        <a href="#" class="hollow-btn">Register / Login</a>
-                    </li>
+    });
+</script>
+
+
+
+<div id="loader-wrapper">
+    <div id="loader"><img src="img/uni.png"  style="margin-top:15px;padding:35px;"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////
+                                       Register
+////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<section id="register">
+
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="col-md-6 left hidden-xs col-sm-6">
+            <img src="img/uni.png" alt="" />
+
+        </div>
+
+        <div class="col-md-6 right col-sm-6">
+
+            <div class="login-container ">
+
+                <img src="img/uni.png" alt="" class="m-b-40">
+
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="pill" href="#home">Login</a></li>
+                    <li><a data-toggle="pill" href="#menu1">Sign up</a></li>
 
                 </ul>
 
 
 
-            </div>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
 
+                        <form action="">
+                            <div class="form-title">Login to your Account</div>
 
-        </div>
-        <!--ends here-->
-        <div class="hidden-xs hidden-sm">
-            <nav class=" menu navbar navbar-default nav-custom2">
-                <div class="container-fluid">
-                    <!--
-                         header for desktop-->
+                            <div class="form-group m-b-0">
+                                <input type="email" class="form-control border-bottom-0" placeholder="Email"  >
 
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"><img src="img/uni.png" width="130" style="margin-top:-12px; transform: scale(.8);"></a>
-                    </div>
+                                <span class="input-icon"><i class="fa fa-envelope"></i></span>
 
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">About</a></li>
-                            <li>
-                                <a href="#">Benefits</a>
-                            </li>
-                            <li>
-                                <a href="#">Intro</a>
-                            </li>
-                            <li>
-                                <a href="#">Subscribe</a>
-                            </li>
-                            <li>
-                                <a href="#">Testimonials</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="hollow-btn">Register / Login</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </div>               <!--ends here-->
-
-
-            </nav>
-        </div>
-    </header>
-</div>
-<!-- newheader end-->
-<br>
-
-<section class="login-section img-section">
-
-    <div class="row">
-
-        <div class="col-md-6 login-form card-oil register-padding">
-            <h3 class="oil-color3 text-center">Register</h3>
-            <form>
-
-                <div class="oil-input-field">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <p class="oil-color text-right" style="font-size: 12px;">Company:</p>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Name" />
                             </div>
-                        </div>
-                    </div>
-                </div>
+
+                            <div class="form-group m-b-0">
+                                <input type="password" class="form-control" placeholder="Password"  >
+
+                                <span class="input-icon"><i class="fa fa-lock"></i></span>
 
 
-                <div class="oil-input-field">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <p class="oil-color text-right" style="font-size: 12px;">Company Details:</p>
-                        </div>
-                        <div class="col-xs-9">
+                            </div>
 
-                            <div>
+                            <div class="form-group m-t-40">
                                 <div class="row">
-                                    <div class="col-xs-6">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email" />
-                                        </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <button>Login</button>
+
                                     </div>
-                                    <div class="col-xs-6">
-                                        <div class="form-group">
-                                            <input type="number" class="form-control" placeholder="Phone No." />
-                                        </div>
+
+                                    <div class="col-md-6 text-center col-sm-6">
+                                        <p><a href="">Forget Password</a></p>
+
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="oil-input-field">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <p class="oil-color text-right" style="font-size: 12px;">How did you here from us</p>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter here"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="oil-input-field">
-                    <div class="row">
-
-
-                        <div class="col-xs-3">
-                            <p class="oil-color text-right" style="font-size: 12px;">User Name:</p>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="First Name" />
-                                    </div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Last Name" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="oil-input-field">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <p class="oil-color text-right" style="font-size: 12px;">User Email:</p>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="form-group">
-                                <input type="email" class="form-control" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="oil-input-field">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <p class="oil-color text-right" style="font-size: 12px;">Password:</p>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password" />
-                                    </div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Conform Password" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="oil-input-field">
-
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <p class="oil-color text-right" style="font-size: 12px;">User Phone No:</p>
-                                </div>
-
-                                <div class="col-xs-9">
-                                    <div class="form-group">
-                                        <input type="number" class="form-control" placeholder="Mobile" />
-                                    </div>
-                                    </div>
-                                </div>
-                    </div>
-
-
-
-
-
-
-
-<br>
-
-                <div class="oil-input-field">
-                    <div class="row">
-
-
-                        <div class="col-xs-9 col-xs-offset-3">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <p class="oil-color text-right" style="font-size: 12px;">Gender:</p>
-                                </div>
-
-                                <div class="col-xs-3">
-                                    <input type="radio" name="gender" value="male" checked><span class="oil-color">Male<br> </span>
-                                </div>
-
-                                <div class="col-xs-3">
-                                    <input type="radio" name="gender" value="female"> <span class="oil-color">Female<br> </span>
 
                                 </div>
+
 
                             </div>
-                        </div>
+
+                        </form>
 
                     </div>
-                </div>
-                
 
-                <br>
 
-                <div class="row">
-                    <div class="col-xs-12 text-center">
+                    <div id="menu1" class="tab-pane fade">
+                        <form action="">
+                            <div class="form-title"> Sign up </div>
 
-                        <a href="#" class="oil-btn-solid"> Submit</a>
+                            <div class="form-group m-b-0">
+                                <input type="email" class="form-control border-bottom-0" placeholder="Email"  >
+
+                                <span class="input-icon"><i class="fa fa-envelope"></i></span>
+
+                            </div>
+
+                            <div class="form-group m-b-0">
+                                <input type="password" class="form-control border-bottom-0" placeholder="Password"  >
+
+                                <span class="input-icon"><i class="fa fa-lock"></i></span>
+
+                            </div>
+
+                            <div class="form-group m-b-0">
+                                <input type="text" class="form-control border-bottom-0" placeholder="Company Name"  >
+
+                                <span class="input-icon"><i class="fa fa-lock"></i></span>
+
+                            </div>
+
+                            <div class="form-group m-b-0">
+                                <input type="Number" class="form-control " placeholder="Phone"  >
+
+                                <span class="input-icon"><i class="fa fa-phone"></i></span>
+
+                            </div>
+
+                            <div class="form-group m-t-40">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <button>Create Account</button>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+                        </form>
+
                     </div>
 
+
+
+
+
                 </div>
 
-            </form>
-        </div>
-        <div class="col-md-6 login-form-rightside  hidden-xs">
-            <!--<h1>Nexus</h1>-->
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1 class="bg-white text-center oil-title">Oil and Gas</h1>
-                    <!--<h3 class="bg-white">Login With Social Media</h3>-->
-                    <!--<ul class="social-connect">-->
-                    <!--<li><a href=""><i class="fa fa-facebook"></i></a></li>-->
-                    <!--<li><a href=""><i class="fa fa-twitter"></i></a></li>-->
-                    <!--<li><a href=""><i class="fa fa-google-plus"></i></a></li>-->
-                    <!--</ul>-->
-                </div>
+
             </div>
-        </div>
 
+        </div>
 
     </div>
-</section>
+    <!--</div>-->
+
+
+
+
+</section> <!--Register Section ends here-->
+
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/header.js"></script>
+<script src="js/mobileheader.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
 
 <script>
-    //    //Floating labels//
-    //    $(document).ready(function () {
-    //        $("input[type ='text']").click(function () {
-    //            var $this = $(this);
-    //            $this.attr("placeholder", "");
-    //            $this.parent().find(".float-label").addClass("label-top");
-    //
-    //        })
-    //    });
-    //
-    //    //Ends here//
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    new WOW().init();
+
+
 </script>
 
 
 
 </body>
 </html>
+
