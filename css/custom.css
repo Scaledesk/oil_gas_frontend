@@ -3517,6 +3517,9 @@ span.round-tab:hover {
     color: #fff;
 }
 
+
+
+
 @media screen and (max-width: 769px) {
     #register .login-container .form-group button{
         margin-left: 25px !important;
@@ -3605,3 +3608,67 @@ span.round-tab:hover {
 #register .login-container .nav>li>a:focus, .nav>li>a:hover{
     background-color: transparent;
 }
+
+
+#thank-you{
+    height: 100vh;
+    background: linear-gradient(#f89e3c ,#8d8c95);
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#thank-you .thank-you-container{
+    max-width: 600px;
+    /*max-height: 400px;*/
+    margin: 0 auto;
+}
+
+
+
+#thank-you .container .card .icon-bg{
+    background-color: darkseagreen;
+    text-align: center;
+    padding: 2em;
+}
+
+
+#thank-you .container .card .icon-bg i {
+    font-size: 100px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    line-height: 200px;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+#thank-you .container .card .thank-you-txt  {
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 2em;
+
+}
+
+
+
+#thank-you .container .card .thank-you-txt i  {
+   color: #ffc107;
+    font-size: 30px;
+}
+
+
+
