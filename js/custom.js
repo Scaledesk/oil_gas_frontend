@@ -150,3 +150,108 @@ function prevTab(elem) {
 }
 
 
+
+//Vertical timeline//
+
+
+jQuery(document).ready(function($){
+    var timelineBlocks = $('.cd-timeline-block'),
+        offset = 0.8;
+
+    //hide timeline blocks which are outside the viewport
+    hideBlocks(timelineBlocks, offset);
+
+    //on scolling, show/animate timeline blocks when enter the viewport
+    $(window).on('scroll', function(){
+        (!window.requestAnimationFrame)
+            ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
+            : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+    });
+
+    function hideBlocks(blocks, offset) {
+        blocks.each(function(){
+            ( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+        });
+    }
+
+    function showBlocks(blocks, offset) {
+        blocks.each(function(){
+            ( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+        });
+    }
+});
+
+
+
+
+//horizontal timeline
+
+
+$('.dot:nth-child(1)').click(function(){
+    $('.inside').animate({
+        'width' : '20%'
+    }, 500);
+});
+$('.dot:nth-child(2)').click(function(){
+    $('.inside').animate({
+        'width' : '40%'
+    }, 500);
+});
+$('.dot:nth-child(3)').click(function(){
+    $('.inside').animate({
+        'width' : '60%'
+    }, 500);
+});
+$('.dot:nth-child(4)').click(function(){
+    $('.inside').animate({
+        'width' : '80%'
+    }, 500);
+});
+if ($('#switch1').not(':checked')){
+    $('.modal').wrap('<div class="mask"></div>')
+    $('.mask').click(function(){
+        $(this).fadeOut(300);
+        $('.mask article').animate({
+            'top' : '-100%'
+        }, 300)
+    });
+
+    $('.dot').click(function(){
+        var modal = $(this).attr('id');
+        $('.mask').has('article.' + modal).fadeIn(300);
+        $('.mask article.' + modal).fadeIn(0).animate({
+            'top' : '10%'
+        }, 300);
+    });
+}
+$("#switch1").click(function(){
+    if ($('#switch1').is(':checked')){
+        $('.modal').unwrap('<div class="mask"></div>');
+        $('.modal').hide();
+        $('.modal').addClass('nobox');
+        $('.dot').click(function(){
+            var modal = $(this).attr('id');
+            $('article.nobox').hide()
+            $('article.nobox.' + modal).fadeIn(200)
+        });
+    } else {
+        $('article').removeClass("nobox");
+        $('.modal').wrap('<div class="mask"></div>')
+        $('.mask').click(function(){
+            $(this).fadeOut(300);
+            $('.mask article').animate({
+                'top' : '-100%'
+            }, 300)
+        });
+
+        $('.dot').click(function(){
+            var modal = $(this).attr('id');
+            $('.mask').has('article.' + modal).fadeIn(300);
+            $('.mask article.' + modal).fadeIn(0).animate({
+                'top' : '10%'
+            }, 300);
+        });
+    }
+})
+
+
